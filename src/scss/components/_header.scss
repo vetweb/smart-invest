@@ -180,6 +180,14 @@
 .header__button {
 	margin-left: 40px;
 
+	&:hover {
+		color: var(--white);
+
+		.inner-page & {
+			color: var(--dark);
+		}
+	}
+
 	@include tablet {
 		display: none;
 	}

@@ -1897,6 +1897,12 @@ button.swiper-pagination-bullet {
 .header__button {
   margin-left: 40px;
 }
+.header__button:hover {
+  color: var(--white);
+}
+.inner-page .header__button:hover {
+  color: var(--dark);
+}
 @media (max-width: 1024px) {
   .header__button {
     display: none;
@@ -2761,7 +2767,7 @@ button.swiper-pagination-bullet {
 
 .left-menu__button {
   height: 53px;
-  margin-top: 150px;
+  margin-top: 90px;
   overflow: hidden;
   font-weight: 600;
   font-size: 11px;
