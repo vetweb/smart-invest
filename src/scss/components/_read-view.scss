@@ -1,0 +1,13 @@
+.read-view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__icon {
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+		color: var(--dark-alpha56);
+		fill: var(--dark-alpha56);
+	}
+}

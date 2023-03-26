@@ -1,0 +1,48 @@
+.share {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include tablet {
+		.content & {
+			display: none;
+		}
+	}
+
+	.content--one-col &  {
+		position: absolute;
+		right: -84px;
+		top: 50px;
+		flex-direction: column;
+		border: 1px solid var(--dark-alpha20);
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+		margin-right: 4px;
+		color: var(--dark-alpha56);
+
+		.content--one-col & {
+			display: none;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		text-decoration: none;
+
+		.content--one-col & {
+			border-bottom: 1px solid var(--dark-alpha20);
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+}

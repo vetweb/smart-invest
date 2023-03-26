@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body inner-page">
+  <div class="site-container">
+    @include('partials/left-menu.html')
+    @include('partials/menu-modal.html')
+    @include('partials/header.html')
+    <div class="p404">
+      <div class="p404__small">Ошибка 404</div>
+      <div class="p404__title">СТРАНИЦА НЕ НАЙДЕНА</div>
+      <button class="button">Вернуться на главную</button>
+    </div>
+    @include('partials/cookie.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.other-news {
+	&__title {
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	&__item {
+		display: block;
+		color: var(--dark);
+		margin-bottom: 24px;
+		text-decoration: none;
+		padding-bottom: 24px;
+		border-bottom: 1px solid var(--dark-alpha20);
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

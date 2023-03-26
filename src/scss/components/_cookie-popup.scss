@@ -1,0 +1,55 @@
+.cookie-popup {
+	display: none;
+	position: fixed;
+	right: 48px;
+	bottom: 48px;
+	width: 100%;
+	max-width: 840px;
+	z-index: 901;
+
+	@include tablet {
+		bottom: 0;
+		right: 0;
+		max-width: 100%;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 24px;
+		background: var(--white);
+
+		@include tablet {
+			padding: 20px;
+		}
+	}
+
+	&__icon {
+		flex: 0 0 auto;
+		width: 64px;
+		height: 64px;
+
+		@include tablet {
+			display: none;
+		}
+	}
+	&__content {
+		margin-left: 16px;
+
+		@include tablet {
+			margin-left: 0;
+		}
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 24px;
+
+		@include tablet {
+			margin-bottom: 16px;
+		}
+	}
+}

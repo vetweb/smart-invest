@@ -1,0 +1,114 @@
+.grid-list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 0 -48px;
+	box-sizing: border-box;
+
+	@include tablet {
+		margin: 32px 0 47px -4px;
+		box-sizing: content-box;
+	}
+
+	&__item {
+		flex: 1 0 33%;
+		width: 33%;
+		padding: 40px 48px;
+		transition: background .2s linear;
+		border-right: 1px solid var(--gray2);
+
+		@include tablet {
+			padding: 0;
+			border: 0;
+			flex: 0 0 auto;
+			width: 95%;
+		}
+
+		&:hover {
+			background: var(--gray);
+
+			p {
+				text-decoration: underline;
+			}
+
+			@include tablet {
+				background: none;
+			}
+		}
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	&__item-img {
+		overflow: hidden;
+
+		img {
+			display: block;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__item-content {
+		margin-top: 24px;
+
+		@include tablet {
+			margin-top: 16px;
+		}
+	}
+
+	p {
+		margin: 16px 0 0 0;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		color: var(--dark);
+
+		@include tablet {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&__item-content-short {
+		display: block;
+		margin: 8px 0 16px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: var(--dark-alpha56);
+
+		@include tablet {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+.view-box {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 16px;
+	color: var(--dark-alpha56);
+
+	@include tablet {
+		font-size: 14px;
+	}
+
+	& > div {
+		flex: 0 0 auto;
+	}
+
+	&__read-time {
+		margin-left: 74px;
+		margin-right: 24px;
+
+		@include tablet {
+			margin-right: 16px;
+		}
+	}
+
+}

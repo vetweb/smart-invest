@@ -1,0 +1,81 @@
+.file {
+	margin-bottom: 24px;
+
+	&__link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		&:hover {
+			.file__icon i {
+				width: 15px;
+
+				&:after, &:before {
+					width: 26px;
+				}
+			}
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 44px;
+		height: 56px;
+		background: url('/img/file.svg') no-repeat center;
+		background-size: cover;
+
+		i {
+			display: block;
+			position: absolute;
+			left: 9px;
+			top: 26px;
+			width: 26px;
+			height: 2px;
+			border-radius: 1px;
+			background: var(--green);
+			transition: all .2s linear;
+
+			&:before,
+			&:after {
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 8px;
+				width: 100%;
+				height: 2px;
+				background: var(--green);
+				transition: all .2s linear;
+			}
+
+			&:after {
+				width: 15px;
+				top: 16px;
+			}
+		}
+	}
+
+	&__content {
+		margin-left: 16px;
+	}
+
+	&__title {
+		display: block;
+		margin-bottom: 4px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		color: var(--dark);
+	}
+
+	&__caption {
+		display: block;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: var(--dark-alpha56);
+	}
+}

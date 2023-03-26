@@ -1,0 +1,9 @@
+.project {
+	&__img {
+		margin-top: 40px;
+
+		@include tablet {
+			margin-top: 16px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.order-form {
+	&__row {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		@include tablet {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		margin-right: 80px;
+
+		@include tablet {
+			margin-right: 0;
+		}
+	}
+
+	&__right {
+		flex: 0 0 auto;
+		width: 100%;
+		max-width: 700px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+
+		@include tablet {
+			margin-bottom: 24px;
+			font-size: 32px;
+			line-height: 40px;
+		}
+	}
+
+	&__form-box {
+		margin-top: 32px;
+	}
+}

@@ -1,0 +1,21 @@
+.steps {
+	&__title {
+		max-width: 850px;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 40px;
+
+		@include tablet {
+			font-size: 24px;
+			line-height: 34px;
+		}
+
+		a {
+			color: var(--green);
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

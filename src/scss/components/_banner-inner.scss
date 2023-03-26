@@ -1,0 +1,39 @@
+.banner-inner {
+	min-height: 450px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--white);
+
+	h1 {
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 64px;
+		line-height: 78px;
+
+		@include tablet {
+			font-size: 32px;
+			line-height: 40px;
+		}
+	}
+
+	&__descr {
+		max-width: 730px;
+		margin-bottom: 16px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 34px;
+		font-style: italic;
+
+		@include tablet {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&__small-descr {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

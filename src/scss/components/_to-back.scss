@@ -1,0 +1,30 @@
+.to-back {
+	margin-bottom: 24px;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		color: var(--dark-alpha56);
+		stroke: var(--dark-alpha56);
+		font-weight: 600;
+		transition: all .2s linear;
+
+		.banner-inner & {
+			stroke: var(--white);
+			color: var(--white);
+		}
+
+		&:hover {
+			stroke: var(--green);
+			color: var(--green);
+		}
+	}
+
+	&__link-arrow {
+		width: 8px;
+		margin-right: 8px;
+		stroke-width: 2px;
+		transform: scale(-1, -1);
+	}
+}

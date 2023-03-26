@@ -1,0 +1,186 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 100%;
+	z-index: 2;
+
+	@include tablet {
+		position: fixed;
+		top: 0;
+		background: var(--dark);
+		padding: 12px 0;
+
+		.inner-page & {
+			background: var(--white-alpha20);
+			backdrop-filter: blur(4px);
+		}
+
+		&.active {
+			background: var(--dark);
+			backdrop-filter: blur(0);
+		}
+	}
+}
+
+.logo {
+	&__img {
+		display: block;
+
+		.inner-page & {
+			display: none;
+		}
+
+		@include tablet {
+			.header.active & {
+				display: block;
+			}
+		}
+	}
+	&__img-inner {
+		display: none;
+
+		.inner-page & {
+			display: block;
+		}
+
+		@include tablet {
+			.header.active & {
+				display: none;
+			}
+		}
+	}
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.header__menu {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 0 -16px;
+}
+
+.header__logo {
+	display: block;
+	text-decoration: none;
+	width: 110px;
+	height: 48px;
+
+	@include tablet {
+		width: 92px;
+		height: 40px;
+	}
+}
+
+.header__burger {
+	display: none;
+	cursor: pointer;
+
+	.left-menu__button {
+		height: 33px;
+	}
+
+	@include tablet {
+		display: block;
+	}
+}
+
+.header__menu {
+	padding: 0;
+	margin: 0 0 0 auto;
+	list-style: none;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.header__menu-item {
+	padding: 0 16px;
+}
+
+.header__menu-link {
+	font-weight: 600;
+	font-size: 12px;
+	color: var(--white);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .2s linear;
+
+	.inner-page & {
+		color: var(--dark);
+	}
+
+	&:hover {
+		color: var(--green);
+	}
+}
+
+.header__phone-icon {
+	display: none;
+	width: 32px;
+	height: 32px;
+
+	svg {
+		stroke-width: 2px;
+		stroke: var(--white);
+		fill: none;
+
+		.inner-page & {
+			stroke: var(--dark);
+		}
+
+		@include tablet {
+			.header.active & {
+				stroke: var(--white);
+			}
+		}
+	}
+
+	@include tablet {
+		display: block;
+	}
+}
+
+.header__phone {
+	font-weight: 600;
+	font-size: 14px;
+	margin-left: 32px;
+	color: var(--white);
+	transition: all .2s linear;
+
+	.inner-page & {
+		color: var(--dark);
+	}
+
+	&:hover {
+		color: var(--green);
+	}
+
+	span {
+		@include tablet {
+			display: none;
+		}
+	}
+
+	@include tablet {
+		width: 32px;
+		height: 32px;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: 20px;
+	}
+}
+
+.header__button {
+	margin-left: 40px;
+
+	@include tablet {
+		display: none;
+	}
+}

@@ -1,0 +1,84 @@
+.root-about__wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	@include tablet {
+		display: block;
+	}
+}
+
+.root-about__left {
+	max-width: 620px;
+}
+
+.root-about__right {
+	@include tablet {
+		margin-top: 32px;
+	}
+}
+
+.root-about__title {
+	margin-bottom: 24px;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 42px;
+
+	@include tablet {
+		margin-bottom: 10px;
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+.root-about p {
+	margin-bottom: 40px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.root-about__about-achiev {
+	margin-bottom: 50px;
+	max-width: 100%;
+
+	@include tablet {
+		margin-bottom: 16px;
+	}
+}
+
+.root-about__about-achiev:last-child {
+	margin-bottom: 0;
+}
+
+.root-about__about-achiev .about-achiev__row {
+	padding-left: 32px;
+	border-left: 2px solid var(--green);
+
+	@include tablet {
+		padding-left: 0;
+		border: 0;
+	}
+}
+
+.root-about__about-achiev:nth-child(2) {
+	margin-left: 80px;
+	@include tablet {
+		margin-left: 0;
+	}
+}
+
+.root-about__about-achiev:nth-child(3) {
+	margin-left: 160px;
+	@include tablet {
+		margin-left: 0;
+	}
+}
+
+.root-about__about-achiev .about-achiev__text {
+	padding-left: 32px;
+
+	@include tablet {
+		padding-left: 0;
+	}
+}

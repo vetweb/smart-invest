@@ -1,0 +1,43 @@
+.command {
+	margin-left: 73px;
+
+	@include tablet {
+		margin-left: 0;
+	}
+
+	.grid-list {
+		@include tablet {
+			margin-left: 0;
+		}
+	}
+
+	.container {
+		padding: 0;
+
+		@include tablet {
+			padding: 0 var(--container-offset);
+			max-width: var(--container-width);
+		}
+	}
+
+	&__wrapper {
+		padding-left: 48px;
+		overflow: hidden;
+
+		@include tablet {
+			padding-left: 0;
+		}
+	}
+
+	.grid-list__item {
+		flex: 1 0 412px;
+		width: 100%;
+		max-width: 412px;
+
+		@include tablet {
+			margin-right: 16px;
+			flex: 1 0 264px;
+			max-width: 264px;
+		}
+	}
+}

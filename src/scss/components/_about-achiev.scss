@@ -1,0 +1,46 @@
+.about-achiev {
+	color: var(--dark);
+
+	@include tablet {
+		margin-bottom: 16px;
+	}
+}
+
+.about-achiev__row {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+.about-achiev__count {
+	font-weight: 500;
+	font-size: 80px;
+	line-height: 75px;
+
+	@include tablet {
+		font-size: 64px;
+		line-height: 60px;
+	}
+}
+.about-achiev__caption {
+	margin-left: 16px;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
+
+	@include tablet {
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+.about-achiev__text {
+	max-width: 267px;
+	margin-top: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+
+	@include tablet {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    @include('partials/left-menu.html')
+    @include('partials/menu-modal.html')
+    @include('partials/modal-form.html')
+    <div class="separator-vertica-left"></div>
+    <div class="root-banner dark-box">
+      <!-- Slider main container -->
+      <div class="swiper-container js-root-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide root-banner__item">
+            <div class="container">
+              <div class="root-banner__item-content">
+                <div class="root-banner__item-caption">
+                  Консалтинг в недвижимости
+                </div>
+                <div class="root-banner__item-title">
+                  Заработок на недвижимости. Бизнес-проекты.
+                </div>
+                <a href="##" class="root-banner__item-button">Инвестиции</a>
+              </div>
+            </div>
+            <div class="root-banner__item-img">
+              <img src="/img/bg-top-banner.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide root-banner__item">
+            <div class="container">
+              <div class="root-banner__item-content">
+                <div class="root-banner__item-title">
+                  Заработок на недвижимости. Бизнес-проекты.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide root-banner__item">
+            <div class="container">
+              <div class="root-banner__item-content">
+                <div class="root-banner__item-title">
+                  Заработок на недвижимости. Бизнес-проекты.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="container">
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    @include('partials/about-root.html')
+    @include('partials/root-services.html')
+    @include('partials/projects-box.html')
+    @include('partials/obj-box.html')
+    @include('partials/news-box.html')
+    @include('partials/cookie.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

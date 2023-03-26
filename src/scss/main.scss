@@ -1,0 +1,45 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "settings";
+
+// подключения компонентов страницы
+@import "components/content/content";
+@import "./components/cookie-popup";
+@import "./components/swiper";
+@import "./components/grid-list";
+@import "./components/read-view";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/button";
+@import "./components/share";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/dropdown-select";
+@import "components/content/file";
+@import "./components/contact";
+@import "./components/root-banner";
+@import "./components/left-menu";
+@import "./components/menu-modal";
+@import "./components/about-achiev";
+@import "./components/root-about";
+@import "./components/services-box";
+@import "./components/project";
+@import "./components/object";
+@import "./components/news";
+@import "./components/grid-gallery";
+@import "./components/about";
+@import "./components/to-back";
+@import "./components/project-char";
+@import "./components/role-list";
+@import "./components/descr-project";
+@import "./components/consultant-info";
+@import "./components/order-form";
+@import "./components/form-box";
+@import "./components/map";
+@import "./components/steps";
+@import "./components/command";
+@import "./components/steps-list";
+@import "./components/404";
+@import "./components/other-news";
+@import "./components/banner-inner";

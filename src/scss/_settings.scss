@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark);
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-outer {
+  margin-top: 128px;
+
+  @include tablet {
+    margin-top: 104px;
+  }
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+
+  &__page {
+    //margin-top: 30px;
+  }
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.section {
+  position: relative;
+  margin: 100px 0;
+
+  @include tablet {
+    margin: 60px 0;
+  }
+
+  &.dark-box {
+    margin: 0;
+    padding: 100px 0;
+
+    @include tablet {
+      padding: 60px 0;
+    }
+  }
+
+  &--inner {
+    margin-bottom: 20px;
+  }
+}
+
+.separator {
+  width: calc(100% - 72px);
+  margin-left: 72px;
+  height: 1px;
+  background: rgba(1, 23, 19, 0.2);
+
+  &--indent {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    @include tablet {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.section-inner {
+  padding: 100px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 48px 0 121px;
+  max-width: 1600px;
+
+  @include tablet {
+    padding: 0 var(--container-offset);
+    max-width: var(--container-width);
+  }
+
+  &--inner {
+    padding-left: 73px;
+  }
+}
+
+.container-inside {
+  overflow: hidden;
+  padding-left: 48px;
+}
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.up__icon {
+  display: block;
+  width: 20px;
+  margin-bottom: 4px;
+  stroke: var(--green);
+  stroke-width: 2px;
+}
+
+.separator-vertica-left {
+  position: fixed;
+  top: 0;
+  left: 72px;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 23, 18, 0.2);
+
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.hor-scroll {
+  overflow: hidden;
+}

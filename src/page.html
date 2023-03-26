@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body inner-page">
+<div class="site-container">
+    <div class="page-outer">
+        @include('partials/left-menu.html')
+        @include('partials/menu-modal.html')
+        @include('partials/header.html')
+        <div class="separator-vertica-left"></div>
+        <div class="container">
+            <!--            @include('partials/content.html')-->
+            @include('partials/content-one-col.html')
+        </div>
+        @include('partials/modal-form.html')
+        @include('partials/news-box.html')
+        @include('partials/cookie.html')
+        @include('partials/footer.html')
+    </div>
+</div>
+</body>
+
+</html>
