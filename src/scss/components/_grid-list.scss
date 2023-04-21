@@ -17,6 +17,11 @@
 		transition: background .2s linear;
 		border-right: 1px solid var(--gray2);
 
+		@include md-desktop {
+			flex: 1 0 36.8%;
+			width: 36.8%;
+		}
+
 		@include tablet {
 			padding: 0;
 			border: 0;
@@ -29,6 +34,10 @@
 
 			p {
 				text-decoration: underline;
+			}
+
+			img {
+				transform: scale(1.1, 1.1);
 			}
 
 			@include tablet {
@@ -48,6 +57,7 @@
 			display: block;
 			width: 100%;
 			object-fit: cover;
+			transition: all .3s linear;
 		}
 	}
 
@@ -85,30 +95,4 @@
 			line-height: 20px;
 		}
 	}
-}
-
-.view-box {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	margin-bottom: 16px;
-	color: var(--dark-alpha56);
-
-	@include tablet {
-		font-size: 14px;
-	}
-
-	& > div {
-		flex: 0 0 auto;
-	}
-
-	&__read-time {
-		margin-left: 74px;
-		margin-right: 24px;
-
-		@include tablet {
-			margin-right: 16px;
-		}
-	}
-
 }

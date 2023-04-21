@@ -17,7 +17,8 @@
 </head>
 
 
-<body class="page__body inner-page">
+<body class="page__body
+">
 <div class="site-container">
     <div class="page-outer">
         <div class="left-menu js-open-left-menu" data-burger>
@@ -33,7 +34,7 @@
             <div class="menu-modal__logo"></div>
         </div>
     </div>
-    <div class="container">
+    <div class="container menu-modal__container">
         <div class="menu-modal__wrapper">
             <div class="menu-modal__col">
                 <ul class="menu-modal__list">
@@ -116,13 +117,16 @@
             </ul>
             <a class="header__phone" href="tel:+375290000000">
                 <span>+375 29 000 00 00</span>
-            <i class="header__phone-icon">
-                <svg viewBox="0 0 24 24">
-                    <use xlink:href="/img/sprite.svg#phone"></use>
-                </svg>
-            </i>
+                <i class="header__phone-icon">
+                    <svg viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#phone"></use>
+                    </svg>
+                </i>
             </a>
-            <button class="header__button button js-open-modal-feedback">Заказать звонок</button>
+            <button class="header__button button js-open-modal-feedback">
+                <span class="button__hover"></span>
+                <span class="button__text">Заказать звонок</span>
+            </button>
             <div class="header__burger js-menu-mobile-open">
                 <div class="left-menu__button">
                     <span class="left-menu__button-icon"></span>
@@ -138,7 +142,7 @@
             <div class="content content--one-col">
     <div class="content__wrapper">
         <div class="content__left">
-            <div class="to-back">
+            <div class="to-back" data-text-anim data-aos="custom">
                 <a href="##" class="to-back__link">
                     <i class="to-back__link-arrow">
                         <svg viewBox="0 0 8 12" fill="none">
@@ -148,9 +152,9 @@
                     Вернуться Назад
                 </a>
             </div>
-            <h2>H2 Стратегические сессии: как за несколько часов принимаются определяющие решения в четыре строки</h2>
+            <h2 data-text-anim data-aos="custom">H2 Стратегические сессии: как за несколько часов принимаются определяющие решения в четыре строки</h2>
             <div class="content__top">
-                <div class="view-box">
+                <div class="view-box" data-text-anim data-aos="custom">
                     <div class="view-box__date">22 декабря 2022</div>
                     <div class="view-box__read-time">10 мин.</div>
                     <div class="view-box__read-view read-view">
@@ -162,7 +166,7 @@
                         <span class="read-view__count">1456</span>
                     </div>
                 </div>
-                <div class="share">
+                <div class="share" data-aos="fade-up" data-aos-delay="200">
                     <div class="share__text">Поделиться:</div>
                     <a href="##" class="share__link">
                         <img src="/img/tw.svg" alt="">
@@ -367,7 +371,7 @@
         <div class="section">
     <div class="content">
         <div class="container">
-            <div class="content__title-box">
+            <div class="content__title-box" data-text-anim data-aos="custom">
                 <h2>Новости</h2>
                 <a href="##" class="link-more">
                     Все новости
@@ -475,10 +479,10 @@
         <footer class="footer dark-box">
     <div class="container">
         <div class="footer__top">
-            <div class="logo">
+            <div class="logo" data-aos="fade-up">
                 <img src="/img/logo.svg" alt="">
             </div>
-            <a href="##" class="up js-up">
+            <a href="##" class="up js-up" data-aos="fade-up" data-aos-delay="200">
                 <i class="up__icon">
                     <svg viewBox="0 0 20 10" fill="none">
                         <use xlink:href="/img/sprite.svg#arrow"></use>
@@ -487,11 +491,11 @@
                 Наверх
             </a>
         </div>
-    </div>
+</div>
     <div class="separator"></div>
     <div class="container">
         <div class="footer__list">
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up">
                 <div class="contact__col-title">Адрес офиса</div>
                 <div class="contact__address">
                     <div>г. Брест, ул. Дзержинского 38</div>
@@ -499,7 +503,7 @@
                     <div><span>сб, вс</span> выходной</div>
                 </div>
             </div>
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact__col-title">Контакты</div>
                 <div class="contact__links-contact">
                     <a href="tel:+375 29 201 33 77" class="phone">+375 29 201 33 77</a>
@@ -507,7 +511,7 @@
                     <a href="mailto:ab_smart@mail.ru" class="mail">ab_smart@mail.ru</a>
                 </div>
             </div>
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="500">
                 <div class="contact__col-title">Заказ звонка</div>
                 <div class="contact__order">
                     <p>Закажите звонок и мы перезвоним Вам для решения задачи</p>

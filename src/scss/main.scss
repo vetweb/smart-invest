@@ -5,9 +5,12 @@
 
 // подключения компонентов страницы
 @import "components/content/content";
+@import "components/odometr";
+@import "animations";
 @import "./components/cookie-popup";
 @import "./components/swiper";
 @import "./components/grid-list";
+@import "./components/view-box";
 @import "./components/read-view";
 @import "./components/header";
 @import "./components/footer";
@@ -43,3 +46,4 @@
 @import "./components/404";
 @import "./components/other-news";
 @import "./components/banner-inner";
+@import "./components/accordion";

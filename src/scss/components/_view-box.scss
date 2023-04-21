@@ -1,0 +1,33 @@
+.view-box {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+	color: var(--dark-alpha56);
+
+	@include md-desktop {
+		word-break: break-word;
+	}
+
+	@include tablet {
+		font-size: 14px;
+	}
+
+	& > div {
+		flex: 0 0 auto;
+	}
+
+	&__date {
+		margin-right: 74px;
+	}
+
+	&__read-time {
+		margin-right: 24px;
+
+		@include tablet {
+			margin-right: 16px;
+		}
+	}
+
+}

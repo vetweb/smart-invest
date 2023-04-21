@@ -35,13 +35,16 @@
             </ul>
             <a class="header__phone" href="tel:+375290000000">
                 <span>+375 29 000 00 00</span>
-            <i class="header__phone-icon">
-                <svg viewBox="0 0 24 24">
-                    <use xlink:href="/img/sprite.svg#phone"></use>
-                </svg>
-            </i>
+                <i class="header__phone-icon">
+                    <svg viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#phone"></use>
+                    </svg>
+                </i>
             </a>
-            <button class="header__button button js-open-modal-feedback">Заказать звонок</button>
+            <button class="header__button button js-open-modal-feedback">
+                <span class="button__hover"></span>
+                <span class="button__text">Заказать звонок</span>
+            </button>
             <div class="header__burger js-menu-mobile-open">
                 <div class="left-menu__button">
                     <span class="left-menu__button-icon"></span>
@@ -64,7 +67,7 @@
             <div class="menu-modal__logo"></div>
         </div>
     </div>
-    <div class="container">
+    <div class="container menu-modal__container">
         <div class="menu-modal__wrapper">
             <div class="menu-modal__col">
                 <ul class="menu-modal__list">
@@ -191,60 +194,66 @@
 </div>
     <div class="separator-vertica-left"></div>
     <div class="root-banner dark-box">
-      <!-- Slider main container -->
-      <div class="swiper-container js-root-slider">
+    <!-- Slider main container -->
+    <div class="root-banner__no-slider">
+        <div class="container">
+            <div class="root-banner__item-caption">
+                Консалтинг в недвижимости
+            </div>
+            <div class="root-banner__item-title">
+                Заработок на недвижимости. Бизнес-проекты.
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container js-root-slider">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide root-banner__item">
-            <div class="container">
-              <div class="root-banner__item-content">
-                <div class="root-banner__item-caption">
-                  Консалтинг в недвижимости
+            <!-- Slides -->
+            <div class="swiper-slide root-banner__item">
+                <div class="container">
+                    <div class="root-banner__item-content">
+                        <a href="##" class="root-banner__item-button">Инвестиции</a>
+                    </div>
                 </div>
-                <div class="root-banner__item-title">
-                  Заработок на недвижимости. Бизнес-проекты.
+                <div class="root-banner__item-img">
+                    <img src="/img/bg-top-banner.png" alt="">
                 </div>
-                <a href="##" class="root-banner__item-button">Инвестиции</a>
-              </div>
             </div>
-            <div class="root-banner__item-img">
-              <img src="/img/bg-top-banner.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-slide root-banner__item">
-            <div class="container">
-              <div class="root-banner__item-content">
-                <div class="root-banner__item-title">
-                  Заработок на недвижимости. Бизнес-проекты.
+            <div class="swiper-slide root-banner__item">
+                <div class="container">
+                    <div class="root-banner__item-content">
+                        <a href="##" class="root-banner__item-button">Инвестиции 2</a>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide root-banner__item">
-            <div class="container">
-              <div class="root-banner__item-content">
-                <div class="root-banner__item-title">
-                  Заработок на недвижимости. Бизнес-проекты.
+                <div class="root-banner__item-img">
+                    <img src="/img/bg-top-banner.png" alt="">
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="swiper-slide root-banner__item">
+                <div class="container">
+                    <div class="root-banner__item-content">
+                        <a href="##" class="root-banner__item-button">Инвестиции 3</a>
+                    </div>
+                </div>
+                <div class="root-banner__item-img">
+                    <img src="/img/bg-top-banner.png" alt="">
+                </div>
+            </div>
         </div>
         <!-- If we need pagination -->
         <div class="container">
-          <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
         </div>
-      </div>
     </div>
+</div>
     <div class="root-about section">
     <div class="container">
         <div class="root-about__wrapper">
             <div class="root-about__left">
-                <div class="root-about__title">
+                <div class="root-about__title" data-text-anim data-aos="custom">
                     О компании СмартСтройИнвест
                 </div>
-                <p>
+                <p data-text-anim data-aos="custom">
                     Это текст — рыба, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                     текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
                     размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
@@ -255,14 +264,14 @@
             <div class="root-about__right">
                 <div class="about-achiev root-about__about-achiev">
                     <div class="about-achiev__row">
-                        <div class="about-achiev__count">12</div>
+                        <div class="about-achiev__count odometer odometer1">0</div>
                         <div class="about-achiev__caption">лет</div>
                     </div>
                     <div class="about-achiev__text">Работаем на рынке</div>
                 </div>
                 <div class="about-achiev root-about__about-achiev">
                     <div class="about-achiev__row">
-                        <div class="about-achiev__count">8</div>
+                        <div class="about-achiev__count odometer odometer2">0</div>
                         <div class="about-achiev__caption">млн кв. м</div>
                     </div>
                     <div class="about-achiev__text">Введено и строится при нашей поддержке
@@ -270,7 +279,7 @@
                 </div>
                 <div class="about-achiev root-about__about-achiev">
                     <div class="about-achiev__row">
-                        <div class="about-achiev__count">57</div>
+                        <div class="about-achiev__count odometer odometer3">0</div>
                         <div class="about-achiev__caption">компаний</div>
                     </div>
                     <div class="about-achiev__text">Стали нашими клиентами</div>
@@ -283,7 +292,7 @@
     <div class="section services-box">
     <div class="content">
         <div class="container">
-            <div class="content__title-box">
+            <div class="content__title-box" data-text-anim data-aos="custom">
                 <h2>Наши услуги</h2>
                 <a href="##" class="link-more">
                     Все услуги
@@ -294,13 +303,123 @@
                     </i>
                 </a>
             </div>
+            <div class="accordion" data-aos="fade-up" data-aos-delay="200">
+    <div class="accordion-item active">
+        <button id="accordion-button-1"
+                class="accordion-item__header"
+                aria-expanded="true">
+            <span class="accordion-title">Инвестиции</span>
+            <span class="accordion-count">1</span>
+        </button>
+        <div class="accordion-content">
+            <img src="/img/bg-page-top.png" alt="">
+            <div class="accordion-content__wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+                <button class="button button--border">Подробнее</button>
+                <button class="button button--56">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button id="accordion-button-2"
+                class="accordion-item__header"
+                aria-expanded="false">
+            <span class="accordion-title">Управление</span>
+            <span class="accordion-count">2</span>
+        </button>
+        <div class="accordion-content">
+            <img src="/img/bg-page-top.png" alt="">
+            <div class="accordion-content__wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+                <button class="button button--border">Подробнее</button>
+                <button class="button button--56">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button id="accordion-button-3"
+                class="accordion-item__header"
+                aria-expanded="false">
+            <span class="accordion-title">Аналитика</span>
+            <span class="accordion-count">3</span>
+        </button>
+        <div class="accordion-content">
+            <img src="/img/bg-page-top.png" alt="">
+            <div class="accordion-content__wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+                <button class="button button--border">Подробнее</button>
+                <button class="button button--56">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button id="accordion-button-4"
+                class="accordion-item__header"
+                aria-expanded="false">
+            <span class="accordion-title">Маркетинг</span>
+            <span class="accordion-count">4</span>
+        </button>
+        <div class="accordion-content">
+            <img src="/img/bg-page-top.png" alt="">
+            <div class="accordion-content__wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+                <button class="button button--border">Подробнее</button>
+                <button class="button button--56">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button id="accordion-button-5"
+                class="accordion-item__header"
+                aria-expanded="false">
+            <span class="accordion-title">Строительство</span>
+            <span class="accordion-count">5</span>
+        </button>
+        <div class="accordion-content">
+            <img src="/img/bg-page-top.png" alt="">
+            <div class="accordion-content__wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+                <button class="button button--border">Подробнее</button>
+                <button class="button button--56">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button id="accordion-button-6"
+                class="accordion-item__header"
+                aria-expanded="false">
+            <span class="accordion-title">Брокеридж</span>
+            <span class="accordion-count">6</span>
+        </button>
+        <div class="accordion-content">
+            <img src="/img/bg-page-top.png" alt="">
+            <div class="accordion-content__wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+                    suspendisse potenti.</p>
+                <button class="button button--border">Подробнее</button>
+                <button class="button button--56">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </div>
     <div class="section services-box dark-box">
     <div class="content">
         <div class="container">
-            <div class="content__title-box">
+            <div class="content__title-box" data-text-anim data-aos="custom">
                 <h2>Наши проекты</h2>
                 <a href="##" class="link-more">
                     Все объекты
@@ -314,7 +433,7 @@
             <div class="grid-gallery">
                 <div class="grid-gallery__wrapper">
                     <div class="grid-gallery__left">
-                        <a href="##" class="grid-gallery__img-wrapper object">
+                        <a href="##" class="grid-gallery__img-wrapper object" data-aos="fade-up">
                             <span class="object__bg"></span>
                             <div class="object__info-label">ул. Дзержинского 38, 130.5 м²</div>
                             <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
@@ -322,12 +441,12 @@
                         </a>
                     </div>
                     <div class="grid-gallery__right">
-                        <a href="##" class="grid-gallery__item object">
+                        <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-delay="200">
                             <span class="object__bg"></span>
                             <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
                             <div class="object__info-title">Название проекта</div>
                         </a>
-                        <a href="##" class="grid-gallery__item object">
+                        <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-delay="500">
                             <span class="object__bg"></span>
                             <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
                             <div class="object__info-title">Название проекта</div>
@@ -335,7 +454,7 @@
                     </div>
                 </div>
                 <div class="grid-gallery__slider">
-                    <a href="##" class="grid-gallery__item object">
+                    <a href="##" class="grid-gallery__item object" data-aos="fade-up">
                         <span class="object__bg"></span>
                         <div class="object__info-label">ул. Дзержинского 38, 130.5 м²</div>
                         <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
@@ -349,7 +468,7 @@
     <div class="section">
     <div class="content">
         <div class="container">
-            <div class="content__title-box">
+            <div class="content__title-box" data-text-anim data-aos="custom">
                 <h2>Объекты в управлении</h2>
                 <a href="##" class="link-more">
                     Все объекты
@@ -365,7 +484,7 @@
         <div class="container">
             <div class="object-list">
                 <div class="object">
-                    <a href="##" class="object__link">
+                    <a href="##" class="object__link" data-aos="fade-up">
                         <span class="object__bg"></span>
                         <div class="object__info-label">ул. Дзержинского 38, 130.5 м²</div>
                         <img class="grid-gallery__img" src="/img/root-obj.png" alt="">
@@ -380,7 +499,7 @@
     <div class="section">
     <div class="content">
         <div class="container">
-            <div class="content__title-box">
+            <div class="content__title-box" data-text-anim data-aos="custom">
                 <h2>Новости</h2>
                 <a href="##" class="link-more">
                     Все новости
@@ -488,10 +607,10 @@
     <footer class="footer dark-box">
     <div class="container">
         <div class="footer__top">
-            <div class="logo">
+            <div class="logo" data-aos="fade-up">
                 <img src="/img/logo.svg" alt="">
             </div>
-            <a href="##" class="up js-up">
+            <a href="##" class="up js-up" data-aos="fade-up" data-aos-delay="200">
                 <i class="up__icon">
                     <svg viewBox="0 0 20 10" fill="none">
                         <use xlink:href="/img/sprite.svg#arrow"></use>
@@ -500,11 +619,11 @@
                 Наверх
             </a>
         </div>
-    </div>
+</div>
     <div class="separator"></div>
     <div class="container">
         <div class="footer__list">
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up">
                 <div class="contact__col-title">Адрес офиса</div>
                 <div class="contact__address">
                     <div>г. Брест, ул. Дзержинского 38</div>
@@ -512,7 +631,7 @@
                     <div><span>сб, вс</span> выходной</div>
                 </div>
             </div>
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact__col-title">Контакты</div>
                 <div class="contact__links-contact">
                     <a href="tel:+375 29 201 33 77" class="phone">+375 29 201 33 77</a>
@@ -520,7 +639,7 @@
                     <a href="mailto:ab_smart@mail.ru" class="mail">ab_smart@mail.ru</a>
                 </div>
             </div>
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="500">
                 <div class="contact__col-title">Заказ звонка</div>
                 <div class="contact__order">
                     <p>Закажите звонок и мы перезвоним Вам для решения задачи</p>

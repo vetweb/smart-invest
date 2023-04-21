@@ -10,6 +10,13 @@
 	position: relative;
 	display: block;
 	height: 100%;
+	overflow: hidden;
+
+	&:hover {
+		.grid-gallery__img {
+			transform: scale(1.1, 1.1);
+		}
+	}
 }
 
 .object__link {
@@ -26,6 +33,7 @@
 	height: 160px;
 	background: linear-gradient(180deg, rgba(1, 18, 15, 0) 0%, #01120F 100%);
 	opacity: 0.72;
+	z-index: 1;
 
 	@include tablet {
 		display: none;

@@ -22,6 +22,8 @@ console.log(mobileCheck())
 
 // Реализация бургер-меню
 import { burger } from './functions/burger';
+import { accordion } from './functions/accordion';
+import { odometr } from './functions/odometr';
 import { dropdownSelect } from './functions/dropdown-select';
 import { form } from './functions/form';
 import { modal } from './functions/modal';
@@ -101,10 +103,10 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 
 const swiper = new Swiper('.js-root-slider', {
   loop: true,
-  autoplay: {
-    delay: 3400,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3400,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
   },
@@ -127,8 +129,10 @@ const swiper2 = new Swiper('.js-descr-project', {
 
 
 // Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
+import AOS from 'aos';
+AOS.init({
+  duration: 1200
+});
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';

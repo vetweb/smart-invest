@@ -34,7 +34,7 @@
             <div class="menu-modal__logo"></div>
         </div>
     </div>
-    <div class="container">
+    <div class="container menu-modal__container">
         <div class="menu-modal__wrapper">
             <div class="menu-modal__col">
                 <ul class="menu-modal__list">
@@ -117,13 +117,16 @@
             </ul>
             <a class="header__phone" href="tel:+375290000000">
                 <span>+375 29 000 00 00</span>
-            <i class="header__phone-icon">
-                <svg viewBox="0 0 24 24">
-                    <use xlink:href="/img/sprite.svg#phone"></use>
-                </svg>
-            </i>
+                <i class="header__phone-icon">
+                    <svg viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#phone"></use>
+                    </svg>
+                </i>
             </a>
-            <button class="header__button button js-open-modal-feedback">Заказать звонок</button>
+            <button class="header__button button js-open-modal-feedback">
+                <span class="button__hover"></span>
+                <span class="button__text">Заказать звонок</span>
+            </button>
             <div class="header__burger js-menu-mobile-open">
                 <div class="left-menu__button">
                     <span class="left-menu__button-icon"></span>
@@ -205,13 +208,13 @@
         </div>
     </div>
     <div class="container">
-        <div class="content__title-box">
+        <div class="content__title-box" data-text-anim data-aos="custom">
             <h1>Название проекта</h1>
         </div>
     </div>
     <div class="project__wrapper">
         <div class="container">
-            <div class="project-char">
+            <div class="project-char" data-text-anim data-aos="custom">
                 <div class="project-char__item">
                     <div class="project-char__title">20 040 кв.м</div>
                     <div class="project-char__value">жилых площадей</div>
@@ -225,7 +228,7 @@
                     <div class="project-char__value">многоуровневых парковок</div>
                 </div>
             </div>
-            <div class="project__img">
+            <div class="project__img" data-aos="fade-up">
                 <img src="/img/root-obj.png" alt="">
             </div>
         </div>
@@ -233,7 +236,7 @@
 </div>
 <div class="section">
     <div class="container">
-        <div class="content__title-box">
+        <div class="content__title-box" data-text-anim data-aos="custom">
             <h2>Наша роль в проекте</h2>
         </div>
     </div>
@@ -241,7 +244,7 @@
     <div class="container">
         <div class="role-list js-role-list swiper-container">
             <div class="role-list__wrapper swiper-wrapper">
-                <div class="swiper-slide role-list__item">
+                <div class="swiper-slide role-list__item" data-aos="fade-up">
                     <div class="role-list__item-content">
                         <div class="role-list__item-icon">
                             <img src="/img/role.svg" alt="">
@@ -255,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide role-list__item">
+                <div class="swiper-slide role-list__item" data-aos="fade-up" data-aos-delay="200">
                     <div class="role-list__item-content">
                         <div class="role-list__item-icon">
                             <img src="/img/role.svg" alt="">
@@ -269,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide role-list__item">
+                <div class="swiper-slide role-list__item" data-aos="fade-up" data-aos-delay="400">
                     <div class="role-list__item-content">
                         <div class="role-list__item-icon">
                             <img src="/img/role.svg" alt="">
@@ -283,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide role-list__item">
+                <div class="swiper-slide role-list__item" data-aos="fade-up" data-aos-delay="600">
                     <div class="role-list__item-content">
                         <div class="role-list__item-icon">
                             <img src="/img/role.svg" alt="">
@@ -297,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide role-list__item">
+                <div class="swiper-slide role-list__item" data-aos="fade-up" data-aos-delay="800">
                     <div class="role-list__item-content">
                         <div class="role-list__item-icon">
                             <img src="/img/role.svg" alt="">
@@ -311,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide role-list__item">
+                <div class="swiper-slide role-list__item" data-aos="fade-up" data-aos-delay="1000">
                     <div class="role-list__item-content">
                         <div class="role-list__item-icon">
                             <img src="/img/role.svg" alt="">
@@ -332,10 +335,10 @@
 <div class="separator"></div>
 <div class="descr-project">
     <div class="container">
-        <div class="content__title-box">
+        <div class="content__title-box" data-text-anim data-aos="custom">
             <h2>Описание</h2>
         </div>
-        <div class="descr-project__row">
+        <div class="descr-project__row" data-aos="fade-up">
             <div class="descr-project__media">
                 <div class="descr-project__media-imgs">
                     <div class="swiper-container js-descr-project">
@@ -389,7 +392,7 @@
                 </div>
             </div>
         </div>
-        <div class="descr-project__row descr-project__row--invers">
+        <div class="descr-project__row descr-project__row--invers" data-aos="fade-up">
             <div class="descr-project__media">
                 <div class="descr-project__media-imgs">
                     <div class="swiper-container js-descr-project">
@@ -443,7 +446,7 @@
                 </div>
             </div>
         </div>
-        <div class="descr-project__row">
+        <div class="descr-project__row" data-aos="fade-up">
             <div class="descr-project__media">
                 <div class="descr-project__media-imgs">
                     <img src="/img/descr3.png" alt="">
@@ -485,10 +488,10 @@
     </div>
 </div>
 <div class="container">
-    <div class="content__title-box">
+    <div class="content__title-box" data-text-anim data-aos="custom">
         <h2>Схема генплана</h2>
     </div>
-    <div class="map">
+    <div class="map" data-aos="fade-up">
         <img src="/img/schema.png" alt="">
     </div>
 </div>
@@ -496,7 +499,7 @@
 <div class="container">
     <div class="order-form">
         <div class="order-form__row">
-            <div class="order-form__left">
+            <div class="order-form__left" data-aos="fade-up">
                 <div class="order-form__title">
                     Оставьте заявку и мы
                     вам перезвоним в ближайшее время
@@ -511,7 +514,7 @@
                     </div>
                 </div>
             </div>
-            <div class="order-form__right">
+            <div class="order-form__right" data-aos="fade-up">
                 <div class="form-box order-form__form-box">
                     <form action="" class="form-box__form">
                         <div class="form-box__item">
@@ -554,10 +557,10 @@
     <footer class="footer dark-box">
     <div class="container">
         <div class="footer__top">
-            <div class="logo">
+            <div class="logo" data-aos="fade-up">
                 <img src="/img/logo.svg" alt="">
             </div>
-            <a href="##" class="up js-up">
+            <a href="##" class="up js-up" data-aos="fade-up" data-aos-delay="200">
                 <i class="up__icon">
                     <svg viewBox="0 0 20 10" fill="none">
                         <use xlink:href="/img/sprite.svg#arrow"></use>
@@ -566,11 +569,11 @@
                 Наверх
             </a>
         </div>
-    </div>
+</div>
     <div class="separator"></div>
     <div class="container">
         <div class="footer__list">
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up">
                 <div class="contact__col-title">Адрес офиса</div>
                 <div class="contact__address">
                     <div>г. Брест, ул. Дзержинского 38</div>
@@ -578,7 +581,7 @@
                     <div><span>сб, вс</span> выходной</div>
                 </div>
             </div>
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact__col-title">Контакты</div>
                 <div class="contact__links-contact">
                     <a href="tel:+375 29 201 33 77" class="phone">+375 29 201 33 77</a>
@@ -586,7 +589,7 @@
                     <a href="mailto:ab_smart@mail.ru" class="mail">ab_smart@mail.ru</a>
                 </div>
             </div>
-            <div class="footer__col contact">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="500">
                 <div class="contact__col-title">Заказ звонка</div>
                 <div class="contact__order">
                     <p>Закажите звонок и мы перезвоним Вам для решения задачи</p>

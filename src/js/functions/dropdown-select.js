@@ -16,7 +16,6 @@
     listOfOptions.forEach((option2) => {
       option2.classList.remove('active');
     });
-    console.log('event.target', event.target)
     event.target.classList.add('active');
     input.value = event.currentTarget.textContent;
     inputValue = input.value;

@@ -12,7 +12,7 @@
     <div class="banner-inner" style="background-image: url('/img/bg-page-top.png')">
         <div class="page-outer">
             <div class="container">
-                <div class="to-back">
+                <div class="to-back" data-text-anim data-aos="custom">
                     <a href="##" class="to-back__link">
                         <i class="to-back__link-arrow">
                             <svg viewBox="0 0 8 12" fill="none">
@@ -22,18 +22,18 @@
                         Вернуться Назад
                     </a>
                 </div>
-                <h1>Инвестиции</h1>
-                <div class="banner-inner__descr">«Вам не нужно быть умнее других. Вы всего лишь должны быть
+                <h1 data-text-anim data-aos="custom">Инвестиции</h1>
+                <div class="banner-inner__descr" data-text-anim data-aos="custom">«Вам не нужно быть умнее других. Вы всего лишь должны быть
                     дисциплинированнее»
                 </div>
-                <div class="banner-inner__small-descr">Уоррен Баффетт</div>
+                <div class="banner-inner__small-descr" data-text-anim data-aos="custom">Уоррен Баффетт</div>
             </div>
         </div>
     </div>
     <div class="section section--inner">
         <div class="steps">
             <div class="container">
-                <div class="steps__title">
+                <div class="steps__title" data-text-anim data-aos="custom">
                     Хотите начать <a href="##">зарабатывать на инвестировании</a>
                     в недвижимость или расширить свой портфель проектов в сфере недвижимости?
                 </div>
@@ -42,6 +42,7 @@
         </div>
     </div>
     <div class="separator separator--indent"></div>
+    @include('partials/modal-form.html')
     @include('partials/order-form.html')
     <div class="separator separator--indent"></div>
     @include('partials/cookie.html')

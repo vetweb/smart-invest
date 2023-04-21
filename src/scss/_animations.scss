@@ -1,0 +1,24 @@
+[data-aos="custom"][data-text-anim] {
+	-webkit-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+[data-text-anim].aos-animate {
+	animation: clip 2.5s ease forwards;
+}
+[data-text-anim] {
+	-webkit-clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+	clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+}
+
+@keyframes clip {
+	0% {
+		-webkit-clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+		clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%)
+	}
+
+	100% {
+		-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%)
+	}
+}
