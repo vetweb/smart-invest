@@ -68,11 +68,6 @@
 
 }
 
-@keyframes progressBar {
-	0% { left: -100%; }
-	90% { left: 0; }
-}
-
 .root-banner__item {
 	position: relative;
 
@@ -103,6 +98,9 @@
 	max-width: 564px;
 	overflow: hidden;
 	object-fit: cover;
+	opacity: 0;
+	transform: translateX(50px);
+	transition: all .3s linear;
 
 	img {
 		width: 100%;
@@ -216,9 +214,21 @@
 	font-weight: 500;
 	font-size: 32px;
 	font-style: italic;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all .3s linear;
 
 	@include tablet {
 		height: 62px;
 		font-size: 20px;
+	}
+}
+
+.swiper-slide-active {
+	.root-banner__item-img,
+	.root-banner__item-button {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition-delay: .5s;
 	}
 }
