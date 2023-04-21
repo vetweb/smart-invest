@@ -52,6 +52,7 @@
 	background: var(--dark-alpha20);
 	backdrop-filter: blur(7.5px);
 	border-radius: 20px;
+	z-index: 1;
 
 	@include tablet {
 		left: 16px;

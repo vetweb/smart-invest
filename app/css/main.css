@@ -3740,6 +3740,7 @@ button.swiper-pagination-bullet {
   -webkit-backdrop-filter: blur(7.5px);
   backdrop-filter: blur(7.5px);
   border-radius: 20px;
+  z-index: 1;
 }
 @media (max-width: 1024px) {
   .object__info-label {
