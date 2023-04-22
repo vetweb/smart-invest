@@ -25,5 +25,7 @@
 	}
 
 	const observer = new IntersectionObserver(trueCallback, options);
-	observer.observe(achievBox);
+	if(achievBox) {
+		observer.observe(achievBox);
+	}
 })();
