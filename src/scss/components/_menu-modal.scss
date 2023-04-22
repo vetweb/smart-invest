@@ -28,6 +28,10 @@
 		top: 72px;
 		overflow: auto;
 		height: calc(100% - 72px);
+
+		&:after {
+			transform: translateY(-100%) translateX(0);
+		}
 	}
 
 	&__outside {
@@ -87,6 +91,10 @@
 
 		&:after {
 			transform: translateX(0);
+
+			@include tablet {
+				transform: translateY(0);
+			}
 		}
 	}
 

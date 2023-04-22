@@ -82,7 +82,6 @@ mediaQueryList.addEventListener('change', event => {
       },
     });
   } else {
-    console.log('swiperNews', swiperNews);
 
     swiperNews.destroy(true, true);
     swiperRole.destroy( true, true );
@@ -103,10 +102,10 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 
 const swiper = new Swiper('.js-root-slider', {
   loop: true,
-  // autoplay: {
-  //   delay: 3400,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3400,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
   },
