@@ -10,8 +10,7 @@ import { enableScroll } from '../functions/enable-scroll';
   const ariaLabelCloseText = 'Закрыть меню'
   const menu = document?.querySelector('[data-menu]');
   const burger = document?.querySelector('[data-burger]');
-  const menuItems = document?.querySelectorAll('.menu-modal__item');
-  const menuParent = document?.querySelector('.menu-modal__list');
+  const header = document.querySelector('.header');
 
   burger?.addEventListener('click', (e) => {
     burger?.classList.toggle(burgerActiveClass);
@@ -20,10 +19,16 @@ import { enableScroll } from '../functions/enable-scroll';
     if (menu?.classList.contains(menuActiveClass)) {
       burger?.setAttribute(ariaExpandedDataName, 'true');
       burger?.setAttribute(ariaLabelDataName, ariaLabelCloseText);
+      console.log(66)
       disableScroll();
     } else {
       burger?.setAttribute(ariaExpandedDataName, 'false');
       burger?.setAttribute(ariaLabelDataName, ariaLabelOpenText);
+      console.log(88)
+      setTimeout(() => {
+        console.log(555)
+        header.classList.add('jjj');
+      }, 1200)
       enableScroll();
     }
   });

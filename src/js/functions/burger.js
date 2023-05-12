@@ -12,8 +12,6 @@ import { enableScroll } from '../functions/enable-scroll';
   const header = document?.querySelector('.header');
   const burger = document?.querySelector('[data-burger]');
   const burgerMobile = document?.querySelector('.js-menu-mobile-open');
-  const menuItems = document?.querySelectorAll('.menu-modal__item');
-  const menuParent = document?.querySelector('.menu-modal__list');
 
   burger?.addEventListener('click', (e) => {
     burgerMenu(burger);
@@ -26,7 +24,7 @@ import { enableScroll } from '../functions/enable-scroll';
   function burgerMenu (burgerTrigger) {
     burgerTrigger?.classList.toggle(burgerActiveClass);
     menu?.classList.toggle(menuActiveClass);
-    header?.classList.toggle(menuActiveClass);
+    header?.classList.add(menuActiveClass);
 
     if (menu?.classList.contains(menuActiveClass)) {
       burgerTrigger?.setAttribute(ariaExpandedDataName, 'true');
@@ -35,6 +33,9 @@ import { enableScroll } from '../functions/enable-scroll';
     } else {
       burgerTrigger?.setAttribute(ariaExpandedDataName, 'false');
       burgerTrigger?.setAttribute(ariaLabelDataName, ariaLabelOpenText);
+      setTimeout(() => {
+        header.classList.remove(menuActiveClass);
+      }, 1200)
       enableScroll();
     }
   }

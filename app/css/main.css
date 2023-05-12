@@ -9,6 +9,7 @@
   --green-hover: #0c9d83;
   --dark: #011713;
   --white: #ffffff;
+  --white-dark: #F5F6F6;
   --gray: #F0F1F1;
   --gray2: #CCD1D0;
   --dark-alpha56: rgba(1, 23, 19, 0.56);
@@ -890,7 +891,7 @@ h2 {
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 24px;
-  background: var(--white);
+  background: var(--white-dark);
 }
 @media (max-width: 1024px) {
   .cookie-popup__wrapper {
@@ -1988,11 +1989,16 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 0.3s ease-in-out !important;
     -o-transition: all 0.3s ease-in-out !important;
     transition: all 0.3s ease-in-out !important;
-    -webkit-transition-delay: 1.3s !important;
-    -o-transition-delay: 1.3s !important;
-    transition-delay: 1.3s !important;
+    -webkit-transition-delay: 0s !important;
+    -o-transition-delay: 0s !important;
+    transition-delay: 0s !important;
   }
   .inner-page .header {
+    background: var(--white-alpha20);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  .header.sticky {
     background: var(--white-alpha20);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
@@ -2001,16 +2007,13 @@ button.swiper-pagination-bullet {
     background: var(--dark);
     -webkit-backdrop-filter: blur(0);
     backdrop-filter: blur(0);
-    -webkit-transition-delay: 0s !important;
-    -o-transition-delay: 0s !important;
-    transition-delay: 0s !important;
   }
 }
 
 .logo__img {
   display: block;
 }
-.inner-page .logo__img {
+.inner-page .logo__img, .header.sticky .logo__img {
   display: none;
 }
 @media (max-width: 1024px) {
@@ -2021,7 +2024,7 @@ button.swiper-pagination-bullet {
 .logo__img-inner {
   display: none;
 }
-.inner-page .logo__img-inner {
+.inner-page .logo__img-inner, .header.sticky .logo__img-inner {
   display: block;
 }
 @media (max-width: 1024px) {
@@ -2107,7 +2110,7 @@ button.swiper-pagination-bullet {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.inner-page .header__menu-link {
+.inner-page .header__menu-link, .header.sticky .header__menu-link {
   color: var(--dark);
 }
 .header__menu-link:hover {
@@ -2125,7 +2128,7 @@ button.swiper-pagination-bullet {
   stroke: var(--white);
   fill: none;
 }
-.inner-page .header__phone-icon svg {
+.inner-page .header__phone-icon svg, .header.sticky .header__phone-icon svg {
   stroke: var(--dark);
 }
 @media (max-width: 1024px) {
@@ -2148,7 +2151,7 @@ button.swiper-pagination-bullet {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.inner-page .header__phone {
+.inner-page .header__phone, .header.sticky .header__phone {
   color: var(--dark);
 }
 .header__phone:hover {
@@ -2175,7 +2178,7 @@ button.swiper-pagination-bullet {
 .header__button:hover {
   color: var(--white);
 }
-.inner-page .header__button:hover {
+.inner-page .header__button:hover, .header.sticky .header__button:hover {
   color: var(--dark);
 }
 @media (max-width: 1024px) {
@@ -2924,6 +2927,11 @@ button.swiper-pagination-bullet {
   border-radius: 0;
   background: var(--green);
 }
+@media (max-width: 1024px) {
+  .root-banner .swiper-pagination-bullet {
+    width: 40px;
+  }
+}
 .root-banner .swiper-pagination-bullet:before {
   height: 2px;
   width: 100%;
@@ -3067,6 +3075,7 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   text-transform: uppercase;
   color: var(--white-alpha56);
+  background: var(--dark);
 }
 @media (max-width: 1024px) {
   .root-banner__item-caption {
@@ -3249,7 +3258,7 @@ button.swiper-pagination-bullet {
 .header__burger .left-menu__button-icon {
   margin: 7px auto 0;
 }
-.inner-page .header .left-menu__button-icon {
+.inner-page .header .left-menu__button-icon, .header.sticky .left-menu__button-icon {
   background: var(--dark);
 }
 @media (max-width: 1024px) {
@@ -3269,7 +3278,7 @@ button.swiper-pagination-bullet {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.inner-page .header .left-menu__button-icon:before, .inner-page .header .left-menu__button-icon:after {
+.inner-page .header .left-menu__button-icon:before, .header.sticky .left-menu__button-icon:before, .inner-page .header .left-menu__button-icon:after, .header.sticky .left-menu__button-icon:after {
   background: var(--dark);
 }
 @media (max-width: 1024px) {
@@ -3352,7 +3361,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 1024px) {
   .menu-modal {
     top: 72px;
-    overflow: auto;
+    overflow: hidden;
     height: calc(100% - 72px);
   }
   .menu-modal:after {
@@ -3393,6 +3402,11 @@ button.swiper-pagination-bullet {
 }
 .menu-modal .container {
   height: 100%;
+}
+@media (max-width: 1024px) {
+  .menu-modal .container {
+    overflow: auto;
+  }
 }
 .menu-modal__container {
   position: relative;
@@ -3910,7 +3924,7 @@ button.swiper-pagination-bullet {
   top: 32px;
   padding: 5px 20px;
   color: var(--white);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   background: var(--dark-alpha20);

@@ -11,9 +11,14 @@
 		background: var(--dark);
 		padding: 12px 0;
 		transition: all .3s ease-in-out !important;
-		transition-delay: 1.3s !important;
+		transition-delay: 0s !important;
 
 		.inner-page & {
+			background: var(--white-alpha20);
+			backdrop-filter: blur(4px);
+		}
+
+		&.sticky {
 			background: var(--white-alpha20);
 			backdrop-filter: blur(4px);
 		}
@@ -21,7 +26,6 @@
 		&.active {
 			background: var(--dark);
 			backdrop-filter: blur(0);
-			transition-delay: .0s !important;
 		}
 	}
 }
@@ -30,7 +34,8 @@
 	&__img {
 		display: block;
 
-		.inner-page & {
+		.inner-page &,
+		.header.sticky & {
 			display: none;
 		}
 
@@ -43,7 +48,8 @@
 	&__img-inner {
 		display: none;
 
-		.inner-page & {
+		.inner-page &,
+		.header.sticky & {
 			display: block;
 		}
 
@@ -116,7 +122,8 @@
 	text-transform: uppercase;
 	transition: all .2s linear;
 
-	.inner-page & {
+	.inner-page &,
+	.header.sticky & {
 		color: var(--dark);
 	}
 
@@ -136,7 +143,8 @@
 		stroke: var(--white);
 		fill: none;
 
-		.inner-page & {
+		.inner-page &,
+		.header.sticky & {
 			stroke: var(--dark);
 		}
 
@@ -159,7 +167,8 @@
 	color: var(--white);
 	transition: all .2s linear;
 
-	.inner-page & {
+	.inner-page &,
+	.header.sticky & {
 		color: var(--dark);
 	}
 
@@ -188,7 +197,8 @@
 	&:hover {
 		color: var(--white);
 
-		.inner-page & {
+		.inner-page &,
+		.header.sticky & {
 			color: var(--dark);
 		}
 	}

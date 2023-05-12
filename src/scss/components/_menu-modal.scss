@@ -27,7 +27,7 @@
 
 	@include tablet {
 		top: 72px;
-		overflow: auto;
+		overflow: hidden;
 		height: calc(100% - 72px);
 
 		&:after {
@@ -71,6 +71,10 @@
 
 	.container {
 		height: 100%;
+
+		@include tablet {
+			overflow: auto;
+		}
 	}
 
 	&__container {

@@ -59,7 +59,8 @@
 		margin: 7px auto 0;
 	}
 
-	.inner-page .header & {
+	.inner-page .header &,
+	.header.sticky & {
 		background: var(--dark);
 	}
 
@@ -80,7 +81,8 @@
 		background: var(--white);
 		transition: all .2s ease;
 
-		.inner-page .header & {
+		.inner-page .header &,
+		.header.sticky & {
 			background: var(--dark);
 		}
 

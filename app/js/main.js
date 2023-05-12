@@ -964,25 +964,27 @@ var updateCount = function (n) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./src/js/functions/mobile-check.js");
-/* harmony import */ var _functions_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/burger */ "./src/js/functions/burger.js");
-/* harmony import */ var _functions_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/accordion */ "./src/js/functions/accordion.js");
-/* harmony import */ var _functions_accordion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_functions_accordion__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _functions_odometr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions/odometr */ "./src/js/functions/odometr.js");
-/* harmony import */ var _functions_odometr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_functions_odometr__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _functions_dropdown_select__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./functions/dropdown-select */ "./src/js/functions/dropdown-select.js");
-/* harmony import */ var _functions_dropdown_select__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_functions_dropdown_select__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _functions_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./functions/form */ "./src/js/functions/form.js");
-/* harmony import */ var _functions_form__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_functions_form__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _functions_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./functions/modal */ "./src/js/functions/modal.js");
-/* harmony import */ var _functions_show_hide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./functions/show-hide */ "./src/js/functions/show-hide.js");
-/* harmony import */ var _functions_show_hide__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_functions_show_hide__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _functions_cookie__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./functions/cookie */ "./src/js/functions/cookie.js");
-/* harmony import */ var _functions_cookie__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_functions_cookie__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var simplebar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! simplebar */ "./node_modules/simplebar/dist/simplebar.esm.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./functions/validate-forms */ "./src/js/functions/validate-forms.js");
+/* harmony import */ var _functions_sticky_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/sticky-menu */ "./src/js/functions/sticky-menu.js");
+/* harmony import */ var _functions_sticky_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_functions_sticky_menu__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _functions_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/burger */ "./src/js/functions/burger.js");
+/* harmony import */ var _functions_accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions/accordion */ "./src/js/functions/accordion.js");
+/* harmony import */ var _functions_accordion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_functions_accordion__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _functions_odometr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./functions/odometr */ "./src/js/functions/odometr.js");
+/* harmony import */ var _functions_odometr__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_functions_odometr__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _functions_dropdown_select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./functions/dropdown-select */ "./src/js/functions/dropdown-select.js");
+/* harmony import */ var _functions_dropdown_select__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_functions_dropdown_select__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _functions_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./functions/form */ "./src/js/functions/form.js");
+/* harmony import */ var _functions_form__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_functions_form__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _functions_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./functions/modal */ "./src/js/functions/modal.js");
+/* harmony import */ var _functions_show_hide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./functions/show-hide */ "./src/js/functions/show-hide.js");
+/* harmony import */ var _functions_show_hide__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_functions_show_hide__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _functions_cookie__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./functions/cookie */ "./src/js/functions/cookie.js");
+/* harmony import */ var _functions_cookie__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_functions_cookie__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var simplebar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! simplebar */ "./node_modules/simplebar/dist/simplebar.esm.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./functions/validate-forms */ "./src/js/functions/validate-forms.js");
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
@@ -1006,6 +1008,7 @@ console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
+
 
 
 
@@ -1048,7 +1051,7 @@ let swiperRole;
 mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
     console.log('swiperNews1', swiperNews);
-    swiperNews = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-news-slider', {
+    swiperNews = new swiper__WEBPACK_IMPORTED_MODULE_11__["default"]('.js-news-slider', {
       spaceBetween: 16,
       slidesPerView: "auto",
       loop: true,
@@ -1057,7 +1060,7 @@ mediaQueryList.addEventListener('change', event => {
         prevEl: ".swiper-button-prev"
       }
     });
-    swiperRole = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-role-list', {
+    swiperRole = new swiper__WEBPACK_IMPORTED_MODULE_11__["default"]('.js-role-list', {
       spaceBetween: 16,
       slidesPerView: "auto",
       loop: true,
@@ -1071,7 +1074,7 @@ mediaQueryList.addEventListener('change', event => {
     swiperRole.destroy(true, true);
   }
 });
-const commandSlider = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-command-slider', {
+const commandSlider = new swiper__WEBPACK_IMPORTED_MODULE_11__["default"]('.js-command-slider', {
   slidesPerView: "auto",
   navigation: {
     nextEl: ".swiper-button-next",
@@ -1081,8 +1084,8 @@ const commandSlider = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-c
 
 // Подключение свайпера
 
-swiper__WEBPACK_IMPORTED_MODULE_10__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_10__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_10__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_10__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_10__.EffectFade]);
-const swiper = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-root-slider', {
+swiper__WEBPACK_IMPORTED_MODULE_11__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_11__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_11__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_11__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_11__.EffectFade]);
+const swiper = new swiper__WEBPACK_IMPORTED_MODULE_11__["default"]('.js-root-slider', {
   effect: "fade",
   loop: true,
   autoplay: {
@@ -1097,7 +1100,7 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-root-sli
     prevEl: '.swiper-button-prev'
   }
 });
-const swiper2 = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-descr-project', {
+const swiper2 = new swiper__WEBPACK_IMPORTED_MODULE_11__["default"]('.js-descr-project', {
   // Optional parameters
   loop: true,
   // If we need pagination
@@ -1108,7 +1111,7 @@ const swiper2 = new swiper__WEBPACK_IMPORTED_MODULE_10__["default"]('.js-descr-p
 
 // Подключение анимаций по скроллу
 
-aos__WEBPACK_IMPORTED_MODULE_11___default().init({
+aos__WEBPACK_IMPORTED_MODULE_12___default().init({
   duration: 1200
 });
 
@@ -1153,7 +1156,7 @@ const rules1 = [name, phone];
 const afterForm = () => {
   console.log('Произошла отправка, тут можно писать любые действия');
 };
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_12__.validateForms)('.form-box__form', rules1, afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_13__.validateForms)('.form-box__form', rules1, afterForm);
 
 /***/ }),
 
@@ -1244,8 +1247,6 @@ __webpack_require__.r(__webpack_exports__);
   const header = document?.querySelector('.header');
   const burger = document?.querySelector('[data-burger]');
   const burgerMobile = document?.querySelector('.js-menu-mobile-open');
-  const menuItems = document?.querySelectorAll('.menu-modal__item');
-  const menuParent = document?.querySelector('.menu-modal__list');
   burger?.addEventListener('click', e => {
     burgerMenu(burger);
   });
@@ -1255,7 +1256,7 @@ __webpack_require__.r(__webpack_exports__);
   function burgerMenu(burgerTrigger) {
     burgerTrigger?.classList.toggle(burgerActiveClass);
     menu?.classList.toggle(menuActiveClass);
-    header?.classList.toggle(menuActiveClass);
+    header?.classList.add(menuActiveClass);
     if (menu?.classList.contains(menuActiveClass)) {
       burgerTrigger?.setAttribute(ariaExpandedDataName, 'true');
       burgerTrigger?.setAttribute(ariaLabelDataName, ariaLabelCloseText);
@@ -1263,6 +1264,9 @@ __webpack_require__.r(__webpack_exports__);
     } else {
       burgerTrigger?.setAttribute(ariaExpandedDataName, 'false');
       burgerTrigger?.setAttribute(ariaLabelDataName, ariaLabelOpenText);
+      setTimeout(() => {
+        header.classList.remove(menuActiveClass);
+      }, 1200);
       (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     }
   }
@@ -1579,6 +1583,26 @@ closeModal();
       linkTrigger.classList.toggle('show-link');
     });
   }
+})();
+
+/***/ }),
+
+/***/ "./src/js/functions/sticky-menu.js":
+/*!*****************************************!*\
+  !*** ./src/js/functions/sticky-menu.js ***!
+  \*****************************************/
+/***/ (() => {
+
+(function () {
+  let menu = document.querySelector('.header');
+  let offset = menu.offsetHeight;
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > offset - 70) {
+      menu.classList.add("sticky");
+    } else if (window.scrollY < offset) {
+      menu.classList.remove("sticky");
+    }
+  });
 })();
 
 /***/ }),

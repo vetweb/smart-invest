@@ -21,6 +21,7 @@ console.log(mobileCheck())
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
+import { stickyMenu } from './functions/sticky-menu';
 import { burger } from './functions/burger';
 import { accordion } from './functions/accordion';
 import { odometr } from './functions/odometr';
