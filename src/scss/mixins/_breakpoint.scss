@@ -19,7 +19,13 @@
 }
 
 @mixin md-desktop {
-  @media (max-width: (1200px)) {
+  @media (max-width: (1240px)) {
+    @content;
+  }
+}
+
+@mixin lg-desktop {
+  @media (max-width: (1300px)) {
     @content;
   }
 }

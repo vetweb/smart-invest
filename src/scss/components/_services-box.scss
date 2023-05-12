@@ -1,3 +1,7 @@
-.services-box {
+.services-box .content__title-box {
+	margin-bottom: 65px;
 
+	@include tablet {
+		margin-bottom: 32px;
+	}
 }

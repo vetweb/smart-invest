@@ -1,6 +1,15 @@
-.content {
-
+.hide-lg {
+	@include tablet {
+		display: none;
+	}
 }
+
+.hide-lg-down {
+	@include for-desktop {
+		display: none;
+	}
+}
+
 .content h2 {
 	margin: 0;
 	font-size: 32px;
@@ -150,10 +159,60 @@ blockquote {
 		margin-top: 16px;
 	}
 }
+
+.content ul {
+	padding: 0;
+	margin: 0 0 0 16px;
+}
+
+.content ul li {
+	margin-bottom: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
 .content__wrapper {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
+}
+
+.toggle-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--green);
+	font-weight: 600;
+	cursor: pointer;
+
+	&.show-link {
+		.toggle-link__arrow {
+			transform: rotate(-90deg);
+		}
+
+		.toggle-link__show {
+			display: none;
+		}
+
+		.toggle-link__hide {
+			display: block;
+		}
+	}
+}
+
+.toggle-link__hide {
+	display: none;
+}
+
+.toggle-link__arrow {
+	display: inline-block;
+	width: 8px;
+	margin-left: 8px;
+	stroke: var(--green);
+	stroke-width: 2px;
+	transition: all .2s ease-in-out;
+	transform: rotate(90deg);
 }
 
 .img50 {
@@ -223,7 +282,7 @@ blockquote {
 	margin-bottom: 40px;
 
 	@include tablet {
-		margin-bottom: 16px;
+		margin-bottom: 32px;
 	}
 
 	h1 {
@@ -311,6 +370,12 @@ h2 {
 		.link-more__arrow {
 			stroke: var(--green);
 		}
+	}
+}
+
+.link-more__hide-mob {
+	@include tablet {
+		display: none;
 	}
 }
 

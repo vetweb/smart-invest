@@ -2,16 +2,25 @@
     <div class="container">
         <div class="root-about__wrapper">
             <div class="root-about__left">
-                <div class="root-about__title" data-text-anim data-aos="custom">
+                <div class="root-about__title" data-text-anim data-aos="custom" data-aos-once="true">
                     О компании СмартСтройИнвест
                 </div>
-                <p data-text-anim data-aos="custom">
+                <p data-text-anim data-aos="custom" data-aos-once="true" class="js-content">
                     Это текст — рыба, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                     текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
                     размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
                     пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                 </p>
-                <button class="button button--border">
+                <span class="toggle-link js-link-trigger-container">
+                    <span class="toggle-link__show">Читать полностью</span>
+                    <span class="toggle-link__hide">Скрыть</span>
+                    <i class="toggle-link__arrow">
+                        <svg viewBox="0 0 8 12" fill="none">
+                            <use xlink:href="/img/sprite.svg#arrow-r"></use>
+                        </svg>
+                    </i>
+                </span>
+                <button class="button button--border hide-lg">
                     <span class="button__hover"></span>
                     <span class="button__text">Подробнее</span>
                 </button>
@@ -40,6 +49,10 @@
                     <div class="about-achiev__text">Стали нашими клиентами</div>
                 </div>
             </div>
+            <button class="button button--border hide-lg-down">
+                <span class="button__hover"></span>
+                <span class="button__text">Подробнее</span>
+            </button>
         </div>
     </div>
 </div>

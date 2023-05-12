@@ -10,7 +10,7 @@
   <title>Site</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
@@ -20,7 +20,7 @@
 <body class="page__body">
   <div class="site-container">
     <span id="to-top"></span>
-<header class="header" data-aos="fade-down">
+<header class="header" data-aos="fade-down" data-aos-once="true">
     <div class="container">
         <div class="header__wrapper">
             <a class="logo" href="##">
@@ -75,16 +75,8 @@
                     <li class="menu-modal__item">
                         <a href="/" class="menu-modal__link">Главная</a>
                     </li>
-                    <li class="menu-modal__item menu-modal__item-submenu" data-submenu-trigger="true">
+                    <li class="menu-modal__item">
                         <a href="/" class="menu-modal__link">Компания</a>
-                        <ul class="menu-modal__submenu" data-submenu>
-                            <li class="menu-modal__submenu-item">
-                                <a href="##" class="menu-modal__submenu-link">Компания 1</a>
-                            </li>
-                            <li class="menu-modal__submenu-item">
-                                <a href="##" class="menu-modal__submenu-link">Компания 2</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="menu-modal__item" data-submenu-trigger="false">
                         <a href="/services/" class="menu-modal__link">Услуги</a>
@@ -139,6 +131,7 @@
     </div>
 </div>
     <div class="modal">
+    <div class="modal__overlay js-modal-close"></div>
     <div class="modal__content">
         <span class="modal__close js-modal-close">
              <svg viewBox="0 0 16 16">
@@ -155,8 +148,8 @@
                         <input id="username" name="name" class="form-box__input name" type="text" placeholder="Ваше имя">
                     </div>
                     <div class="form-box__item">
-                        <label class="form-box__label" for="username2">Ваше имя2</label>
-                        <input id="username2" name="phone" class="form-box__input phone" type="text" placeholder="Ваше имя2">
+                        <label class="form-box__label" for="phone">Ваш телефон</label>
+                        <input id="phone" name="phone" class="form-box__input phone" type="tel" placeholder="Ваш телефон">
                     </div>
                     <div class="form-box__item">
                         <div class="dropdown-select">
@@ -185,6 +178,7 @@
 </div>
 
 <div class="modal modal--success">
+    <div class="modal__overlay js-modal-close"></div>
     <div class="modal__content">
         <span class="modal__close js-modal-close">
              <svg viewBox="0 0 16 16">
@@ -205,16 +199,6 @@
     <div class="separator-vertica-left"></div>
     <div class="root-banner dark-box">
     <!-- Slider main container -->
-    <div class="root-banner__no-slider" data-text-anim data-aos="custom">
-        <div class="container">
-            <div class="root-banner__item-caption">
-                Консалтинг в недвижимости
-            </div>
-            <div class="root-banner__item-title">
-                Заработок на недвижимости. Бизнес-проекты.
-            </div>
-        </div>
-    </div>
     <div class="swiper-container js-root-slider">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -222,6 +206,12 @@
             <div class="swiper-slide root-banner__item">
                 <div class="container">
                     <div class="root-banner__item-content">
+                        <div class="root-banner__item-caption">
+                            Консалтинг в недвижимости
+                        </div>
+                        <div class="root-banner__item-title">
+                            Заработок на недвижимости. Бизнес-проекты.
+                        </div>
                         <a href="##" class="root-banner__item-button">Инвестиции</a>
                     </div>
                 </div>
@@ -232,6 +222,12 @@
             <div class="swiper-slide root-banner__item">
                 <div class="container">
                     <div class="root-banner__item-content">
+                        <div class="root-banner__item-caption">
+                            Консалтинг в недвижимости
+                        </div>
+                        <div class="root-banner__item-title">
+                            Заработок на недвижимости. Бизнес-проекты.
+                        </div>
                         <a href="##" class="root-banner__item-button">Инвестиции 2</a>
                     </div>
                 </div>
@@ -242,6 +238,12 @@
             <div class="swiper-slide root-banner__item">
                 <div class="container">
                     <div class="root-banner__item-content">
+                        <div class="root-banner__item-caption">
+                            Консалтинг в недвижимости
+                        </div>
+                        <div class="root-banner__item-title">
+                            Заработок на недвижимости. Бизнес-проекты.
+                        </div>
                         <a href="##" class="root-banner__item-button">Инвестиции 3</a>
                     </div>
                 </div>
@@ -260,16 +262,25 @@
     <div class="container">
         <div class="root-about__wrapper">
             <div class="root-about__left">
-                <div class="root-about__title" data-text-anim data-aos="custom">
+                <div class="root-about__title" data-text-anim data-aos="custom" data-aos-once="true">
                     О компании СмартСтройИнвест
                 </div>
-                <p data-text-anim data-aos="custom">
+                <p data-text-anim data-aos="custom" data-aos-once="true" class="js-content">
                     Это текст — рыба, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                     текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
                     размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
                     пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                 </p>
-                <button class="button button--border">
+                <span class="toggle-link js-link-trigger-container">
+                    <span class="toggle-link__show">Читать полностью</span>
+                    <span class="toggle-link__hide">Скрыть</span>
+                    <i class="toggle-link__arrow">
+                        <svg viewBox="0 0 8 12" fill="none">
+                            <use xlink:href="/img/sprite.svg#arrow-r"></use>
+                        </svg>
+                    </i>
+                </span>
+                <button class="button button--border hide-lg">
                     <span class="button__hover"></span>
                     <span class="button__text">Подробнее</span>
                 </button>
@@ -298,6 +309,10 @@
                     <div class="about-achiev__text">Стали нашими клиентами</div>
                 </div>
             </div>
+            <button class="button button--border hide-lg-down">
+                <span class="button__hover"></span>
+                <span class="button__text">Подробнее</span>
+            </button>
         </div>
     </div>
 </div>
@@ -305,10 +320,10 @@
     <div class="section services-box">
     <div class="content">
         <div class="container">
-            <div class="content__title-box" data-text-anim data-aos="custom">
-                <h2>Наши услуги</h2>
-                <a href="##" class="link-more">
-                    Все услуги
+            <div class="content__title-box">
+                <h2 data-text-anim data-aos="custom" data-aos-once="true">Наши услуги</h2>
+                <a href="##" class="link-more hide-lg" data-text-anim data-aos="custom" data-aos-once="true">
+                    Все<span class="link-more__hide-mob"> услуги</span>
                     <i class="link-more__arrow">
                         <svg viewBox="0 0 8 12" fill="none">
                             <use xlink:href="/img/sprite.svg#arrow-r"></use>
@@ -316,7 +331,7 @@
                     </i>
                 </a>
             </div>
-            <div class="accordion" data-aos="fade-up" data-aos-delay="200">
+            <div class="accordion" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
     <div class="accordion-item active">
         <button id="accordion-button-1"
                 class="accordion-item__header"
@@ -330,14 +345,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
                     suspendisse potenti.</p>
-                <button class="button button--border">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Подробнее</span>
-                </button>
-                <button class="button button--56">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Получить консультацию</span>
-                </button>
+                <div class="accordion-content__buttons">
+                    <button class="button button--border">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Подробнее</span>
+                    </button>
+                    <button class="button button--56 button--hide-uplg">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Получить консультацию</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -354,10 +371,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
                     suspendisse potenti.</p>
-                <button class="button button--border"><span class="button__hover"></span>
-                    <span class="button__text">Подробнее</span></button>
-                <button class="button button--56"><span class="button__hover"></span>
-                    <span class="button__text">Получить консультацию</span></button>
+                <div class="accordion-content__buttons">
+                    <button class="button button--border">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Подробнее</span>
+                    </button>
+                    <button class="button button--56 button--hide-uplg">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Получить консультацию</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -374,12 +397,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
                     suspendisse potenti.</p>
-                <button class="button button--border"><span class="button__hover"></span>
-                    <span class="button__text">Подробнее</span>
-                </button>
-                <button class="button button--56"><span class="button__hover"></span>
-                    <span class="button__text">Получить консультацию</span>
-                </button>
+                <div class="accordion-content__buttons">
+                    <button class="button button--border">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Подробнее</span>
+                    </button>
+                    <button class="button button--56 button--hide-uplg">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Получить консультацию</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -396,14 +423,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
                     suspendisse potenti.</p>
-                <button class="button button--border">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Подробнее</span>
-                </button>
-                <button class="button button--56">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Получить консультацию</span>
-                </button>
+                <div class="accordion-content__buttons">
+                    <button class="button button--border">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Подробнее</span>
+                    </button>
+                    <button class="button button--56 button--hide-uplg">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Получить консультацию</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -420,14 +449,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
                     suspendisse potenti.</p>
-                <button class="button button--border">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Подробнее</span>
-                </button>
-                <button class="button button--56">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Получить консультацию</span>
-                </button>
+                <div class="accordion-content__buttons">
+                    <button class="button button--border">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Подробнее</span>
+                    </button>
+                    <button class="button button--56 button--hide-uplg">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Получить консультацию</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -444,14 +475,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
                     suspendisse potenti.</p>
-                <button class="button button--border">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Подробнее</span>
-                </button>
-                <button class="button button--56">
-                    <span class="button__hover"></span>
-                    <span class="button__text">Получить консультацию</span>
-                </button>
+                <div class="accordion-content__buttons">
+                    <button class="button button--border">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Подробнее</span>
+                    </button>
+                    <button class="button button--56 button--hide-uplg">
+                        <span class="button__hover"></span>
+                        <span class="button__text">Получить консультацию</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -462,10 +495,10 @@
     <div class="section services-box dark-box">
     <div class="content">
         <div class="container">
-            <div class="content__title-box" data-text-anim data-aos="custom">
-                <h2>Наши проекты</h2>
-                <a href="##" class="link-more">
-                    Все объекты
+            <div class="content__title-box">
+                <h2 data-text-anim data-aos="custom" data-aos-once="true">Наши проекты</h2>
+                <a href="##" class="link-more" data-text-anim data-aos="custom" data-aos-once="true">
+                    Все<span class="link-more__hide-mob"> объекты</span>
                     <i class="link-more__arrow">
                         <svg viewBox="0 0 8 12" fill="none">
                             <use xlink:href="/img/sprite.svg#arrow-r"></use>
@@ -476,20 +509,22 @@
             <div class="grid-gallery">
                 <div class="grid-gallery__wrapper">
                     <div class="grid-gallery__left">
-                        <a href="##" class="grid-gallery__img-wrapper object" data-aos="fade-up">
+                        <a href="##" class="object" data-aos="fade-up" data-aos-once="true">
                             <span class="object__bg"></span>
                             <div class="object__info-label">ул. Дзержинского 38, 130.5 м²</div>
-                            <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
+                            <div class="grid-gallery__img-wrapper">
+                                <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
+                            </div>
                             <div class="object__info-title">Название проекта</div>
                         </a>
                     </div>
                     <div class="grid-gallery__right">
-                        <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-delay="200">
+                        <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
                             <span class="object__bg"></span>
                             <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
                             <div class="object__info-title">Название проекта</div>
                         </a>
-                        <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-delay="500">
+                        <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
                             <span class="object__bg"></span>
                             <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
                             <div class="object__info-title">Название проекта</div>
@@ -497,10 +532,12 @@
                     </div>
                 </div>
                 <div class="grid-gallery__slider">
-                    <a href="##" class="grid-gallery__item object" data-aos="fade-up">
+                    <a href="##" class="grid-gallery__item object" data-aos="fade-up" data-aos-once="true">
                         <span class="object__bg"></span>
                         <div class="object__info-label">ул. Дзержинского 38, 130.5 м²</div>
-                        <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
+                        <div class="grid-gallery__img-wrapper">
+                            <img class="grid-gallery__img" src="/img/our-pr-big.png" alt="">
+                        </div>
                         <div class="object__info-title">Очень длинное название в две строки</div>
                     </a>
                 </div>
@@ -511,10 +548,10 @@
     <div class="section">
     <div class="content">
         <div class="container">
-            <div class="content__title-box" data-text-anim data-aos="custom">
-                <h2>Объекты в управлении</h2>
-                <a href="##" class="link-more">
-                    Все объекты
+            <div class="content__title-box">
+                <h2 data-text-anim data-aos="custom" data-aos-once="true">Объекты в управлении</h2>
+                <a href="##" class="link-more" data-text-anim data-aos="custom" data-aos-once="true">
+                    Все<span class="link-more__hide-mob"> объекты</span>
                     <i class="link-more__arrow">
                         <svg viewBox="0 0 8 12" fill="none">
                             <use xlink:href="/img/sprite.svg#arrow-r"></use>
@@ -527,10 +564,12 @@
         <div class="container">
             <div class="object-list">
                 <div class="object">
-                    <a href="##" class="object__link" data-aos="fade-up">
+                    <a href="##" class="object__link" data-aos="fade-up" data-aos-once="true">
                         <span class="object__bg"></span>
                         <div class="object__info-label">ул. Дзержинского 38, 130.5 м²</div>
-                        <img class="grid-gallery__img" src="/img/root-obj.png" alt="">
+                        <div class="grid-gallery__img-wrapper">
+                            <img class="grid-gallery__img" src="/img/root-obj.png" alt="">
+                        </div>
                         <div class="object__info-title">Очень длинное название в две строки</div>
                     </a>
                 </div>
@@ -542,10 +581,10 @@
     <div class="section">
     <div class="content">
         <div class="container">
-            <div class="content__title-box" data-text-anim data-aos="custom">
-                <h2>Новости</h2>
-                <a href="##" class="link-more">
-                    Все новости
+            <div class="content__title-box">
+                <h2 data-text-anim data-aos="custom" data-aos-once="true">Новости</h2>
+                <a href="##" class="link-more" data-text-anim data-aos="custom" data-aos-once="true">
+                    Все<span class="link-more__hide-mob"> новости</span>
                     <i class="link-more__arrow">
                         <svg viewBox="0 0 8 12" fill="none">
                             <use xlink:href="/img/sprite.svg#arrow-r"></use>
@@ -629,7 +668,7 @@
     </div>
     <div class="separator"></div>
 </div>
-    <div class="cookie-popup">
+    <div class="cookie-popup js-cookie-popup">
     <div class="cookie-popup__wrapper">
         <div class="cookie-popup__icon">
             <svg viewBox="0 0 64 64">
@@ -643,7 +682,7 @@
                 <a href="##">политикой использования</a> cookie, включая передачу данных, определенных в политике,
                 третьим лицам.
             </p>
-            <button class="button">
+            <button class="button js-cookie-btn-trigger">
                 <span class="button__hover"></span>
                 <span class="button__text">Все понятно</span>
             </button>
@@ -653,10 +692,10 @@
     <footer class="footer dark-box">
     <div class="container">
         <div class="footer__top">
-            <div class="logo" data-aos="fade-up">
+            <div class="logo" data-aos="fade-up" data-aos-once="true">
                 <img src="/img/logo.svg" alt="">
             </div>
-            <a href="#to-top" class="up js-up" data-aos="fade-up" data-aos-delay="200">
+            <a href="#to-top" class="up js-up" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
                 <i class="up__icon">
                     <svg viewBox="0 0 20 10" fill="none">
                         <use xlink:href="/img/sprite.svg#arrow"></use>
@@ -669,7 +708,7 @@
     <div class="separator"></div>
     <div class="container">
         <div class="footer__list">
-            <div class="footer__col contact" data-aos="fade-up">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-once="true">
                 <div class="contact__col-title">Адрес офиса</div>
                 <div class="contact__address">
                     <div>г. Брест, ул. Дзержинского 38</div>
@@ -677,7 +716,7 @@
                     <div><span>сб, вс</span> выходной</div>
                 </div>
             </div>
-            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="200">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
                 <div class="contact__col-title">Контакты</div>
                 <div class="contact__links-contact">
                     <a href="tel:+375 29 201 33 77" class="phone">+375 29 201 33 77</a>
@@ -685,7 +724,7 @@
                     <a href="mailto:ab_smart@mail.ru" class="mail">ab_smart@mail.ru</a>
                 </div>
             </div>
-            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="500">
+            <div class="footer__col contact" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
                 <div class="contact__col-title">Заказ звонка</div>
                 <div class="contact__order">
                     <p>Закажите звонок и мы перезвоним Вам для решения задачи</p>

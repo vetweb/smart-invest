@@ -27,6 +27,11 @@
 			color: var(--white);
 			text-decoration: none;
 			margin-bottom: 8px;
+			transition: color .2s linear;
+
+			&:hover {
+				color: var(--green);
+			}
 		}
 
 		.phone {
@@ -62,7 +67,7 @@
 
 	&__col-title {
 		margin-bottom: 20px;
-		color: var(--white-alpha20);
+		color: var(--white-alpha56);
 
 		@include tablet {
 			font-size: 12px;

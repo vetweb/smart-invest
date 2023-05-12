@@ -1,8 +1,5 @@
 .form-box {
 
-	&__form {
-	}
-
 	&__item {
 		margin-bottom: 24px;
 
@@ -29,6 +26,7 @@
 
 		&:focus {
 			outline: none;
+			border-color: #0BBF9F;
 		}
 	}
 

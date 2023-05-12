@@ -8,15 +8,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--dark-alpha56);
 	transition: all .2s linear;
 	opacity: 0;
 	visibility: hidden;
-	z-index: 1000;
+	z-index: 900;
 
 	&.open-modal {
 		visibility: visible;
 		opacity: 1;
+	}
+
+	&__overlay {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		background: var(--dark-alpha56);
 	}
 
 	&__content {
@@ -24,6 +32,11 @@
 		padding: 48px 40px 36px;
 		max-width: 500px;
 		background: var(--white);
+		z-index: 1;
+
+		@include tablet {
+			padding: 40px 20px 66px;
+		}
 	}
 
 	&__title {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body inner-page">
+<div class="site-container">
+    <div class="site-container__page">
+        <div class="separator-vertica-left"></div>
+        @include('partials/left-menu.html')
+        @include('partials/menu-modal.html')
+        @include('partials/header.html')
+        @include('partials/modal-form.html')
+        <div class="container">
+            <div class="content">
+                <div style="margin: 120px 0;">
+                    <ol>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/invest.html">Инвестирование</a></li>
+                        <li><a href="/about.html">О компании</a></li>
+                        <li><a href="/404.html">404</a></li>
+                        <li><a href="/project.html">Проект</a></li>
+                        <li><a href="/page-s.html">Страница контента с сайдбаром</a></li>
+                        <li><a href="/page.html">Страница контента без сайдбара</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        @include('partials/cookie.html')
+    </div>
+    @include('partials/footer.html')
+</div>
+</body>
+
+</html>

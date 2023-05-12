@@ -1,11 +1,14 @@
 .cookie-popup {
-	display: none;
 	position: fixed;
 	right: 48px;
 	bottom: 48px;
 	width: 100%;
 	max-width: 840px;
 	z-index: 901;
+
+	&.hide {
+		display: none;
+	}
 
 	@include tablet {
 		bottom: 0;

@@ -16,7 +16,9 @@
 		left: 121px;
 
 		@include tablet {
-			display: none;
+			left: 0;
+			text-align: center;
+			bottom: 20px;
 		}
 	}
 
@@ -134,10 +136,9 @@
 .root-banner__item-content {
 	height: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	margin-top: -160px;
 
 	@include tablet {
 		margin-top: 0;
@@ -180,6 +181,7 @@
 
 .root-banner__item-title {
 	max-width: 660px;
+	margin-bottom: 40px;
 	font-weight: 600;
 	font-size: 62px;
 	line-height: 78px;
@@ -196,6 +198,7 @@
 	}
 
 	@include tablet {
+		margin-bottom: 24px;
 		font-size: 32px;
 		line-height: 40px;
 	}

@@ -102,10 +102,23 @@
 
 	&:before {
 		transform: rotate(-40deg);
+		top: 10px;
 	}
 
 	&:after {
 		top: 10px;
 		transform: rotate(40deg);
+
+		@include tablet {
+			top: 11px;
+		}
 	}
+}
+
+.header__burger.active .left-menu__button-icon {
+	&:before {
+		transform: rotate(-40deg);
+		top: 7px;
+	}
+
 }

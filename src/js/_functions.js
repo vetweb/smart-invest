@@ -27,6 +27,8 @@ import { odometr } from './functions/odometr';
 import { dropdownSelect } from './functions/dropdown-select';
 import { form } from './functions/form';
 import { modal } from './functions/modal';
+import { showHhide } from './functions/show-hide';
+import { cookie } from './functions/cookie';
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
@@ -97,10 +99,11 @@ const commandSlider = new Swiper('.js-command-slider', {
 });
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay]);
+import Swiper, { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 const swiper = new Swiper('.js-root-slider', {
+  effect: "fade",
   loop: true,
   autoplay: {
     delay: 3400,
