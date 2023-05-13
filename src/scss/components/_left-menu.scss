@@ -14,7 +14,7 @@
 	&:before {
 		position: absolute;
 		content: '';
-		right: 0;
+		right: -1px;
 		top: 0;
 		width: 1px;
 		height: 100%;
@@ -24,6 +24,10 @@
 	@include tablet {
 		display: none;
 	}
+}
+
+.left-menu.active:before {
+	background: var(--white-alpha20);
 }
 
 .left-menu__button {

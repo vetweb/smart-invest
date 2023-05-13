@@ -869,9 +869,16 @@ h2 {
   width: 100%;
   max-width: 840px;
   z-index: 901;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .cookie-popup.hide {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
 }
 @media (max-width: 1024px) {
   .cookie-popup {
@@ -3211,7 +3218,7 @@ button.swiper-pagination-bullet {
 .left-menu:before {
   position: absolute;
   content: "";
-  right: 0;
+  right: -1px;
   top: 0;
   width: 1px;
   height: 100%;
@@ -3221,6 +3228,10 @@ button.swiper-pagination-bullet {
   .left-menu {
     display: none;
   }
+}
+
+.left-menu.active:before {
+  background: var(--white-alpha20);
 }
 
 .left-menu__button {

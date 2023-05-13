@@ -5,9 +5,12 @@
 	width: 100%;
 	max-width: 840px;
 	z-index: 901;
+	transition: all .3s ease-in-out;
 
 	&.hide {
-		display: none;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(20px);
 	}
 
 	@include tablet {

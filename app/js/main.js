@@ -1050,7 +1050,6 @@ let swiperNews;
 let swiperRole;
 mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
-    console.log('swiperNews1', swiperNews);
     swiperNews = new swiper__WEBPACK_IMPORTED_MODULE_11__["default"]('.js-news-slider', {
       spaceBetween: 16,
       slidesPerView: "auto",
@@ -1594,15 +1593,19 @@ closeModal();
 /***/ (() => {
 
 (function () {
-  let menu = document.querySelector('.header');
-  let offset = menu.offsetHeight;
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > offset - 70) {
-      menu.classList.add("sticky");
-    } else if (window.scrollY < offset) {
-      menu.classList.remove("sticky");
-    }
-  });
+  const md1024max = '(max-width: 1024px)';
+  const mediaQuery = window.matchMedia(md1024max);
+  if (mediaQuery.matches) {
+    let menu = document.querySelector('.header');
+    let offset = menu.offsetHeight;
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > offset - 70) {
+        menu.classList.add("sticky");
+      } else if (window.scrollY < offset - 70) {
+        menu.classList.remove("sticky");
+      }
+    });
+  }
 })();
 
 /***/ }),

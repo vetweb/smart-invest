@@ -64,7 +64,6 @@ let swiperRole
 
 mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
-    console.log('swiperNews1', swiperNews);
     swiperNews = new Swiper('.js-news-slider', {
       spaceBetween: 16,
       slidesPerView: "auto",
