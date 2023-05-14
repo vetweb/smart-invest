@@ -224,7 +224,7 @@
         <div class="modal__under-title">Для получения одной из наших услуг, заполните поля ниже и выберете нужную услугу в списке.</div>
         <div class="modal-form">
             <div class="form-box">
-                <form action="" class="form-box__form">
+                <form action="" class="form-box__form js-form-modal">
                     <div class="form-box__item">
                         <label class="form-box__label" for="username">Ваше имя</label>
                         <input id="username" name="name" class="form-box__input name" type="text" placeholder="Ваше имя">
@@ -298,12 +298,14 @@
             </div>
             <div class="order-form__right" data-aos="fade-up" data-aos-once="true">
                 <div class="form-box order-form__form-box">
-                    <form action="" class="form-box__form">
+                    <form action="" class="form-box__form js-form-order">
                         <div class="form-box__item">
-                            <input class="form-box__input" type="text" placeholder="Ваше имя">
+                            <label class="form-box__label" for="username2">Ваше имя</label>
+                            <input id="username2" class="form-box__input name" type="text" name="name" placeholder="Ваше имя">
                         </div>
                         <div class="form-box__item">
-                            <input class="form-box__input" type="text" placeholder="Ваше имя">
+                            <label class="form-box__label" for="phone2">Ваш телефон</label>
+                            <input id="phone2" class="form-box__input phone" type="tel" name="phone" placeholder="Ваше телефон">
                         </div>
                         <button class="form-box__button button">
                             <span class="button__hover"></span>

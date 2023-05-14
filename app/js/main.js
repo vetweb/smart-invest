@@ -1152,10 +1152,32 @@ const phone = {
   }]
 };
 const rules1 = [name, phone];
+const name1 = {
+  ruleSelector: '.name',
+  errorMessage: 'Name error',
+  rules: [{
+    rule: "minLength",
+    value: 3
+  }, {
+    rule: "required"
+  }]
+};
+const phone2 = {
+  ruleSelector: '.phone',
+  errorMessage: 'email error',
+  rules: [{
+    rule: "minLength",
+    value: 3
+  }, {
+    rule: "required"
+  }]
+};
+const rules2 = [name1, phone2];
 const afterForm = () => {
   console.log('Произошла отправка, тут можно писать любые действия');
 };
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_13__.validateForms)('.form-box__form', rules1, afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_13__.validateForms)('.js-form-modal', rules1, afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_13__.validateForms)('.js-form-order', rules2, afterForm);
 
 /***/ }),
 
@@ -1327,14 +1349,13 @@ __webpack_require__.r(__webpack_exports__);
   function checkCookies() {
     // Если куки cookies_policy нет или она просрочена, то показываем уведомление
     if (!getCookie('cookies_policy')) {
-      cookieContainer.classList.add('hide');
+      cookieContainer.classList.add('show');
     }
 
     // При клике на кнопку устанавливаем куку cookies_policy на один год
     cookieBtn.addEventListener('click', function () {
       setCookie('cookies_policy', 'true', 365);
-      cookieContainer.classList.remove('hide');
-      console.log(1);
+      cookieContainer.classList.remove('show');
     });
   }
   checkCookies();
@@ -1458,11 +1479,13 @@ const enableScroll = () => {
 
 (function () {
   // Variables
-  const formBox = document.querySelector('.form-box');
-  const formBoxElements = formBox.querySelectorAll('.form-box__input');
-  formBoxElements.forEach(elem => {
-    elem.addEventListener('focus', activateInput);
-    elem.addEventListener('blur', deActivateInput);
+  const formBoxes = document.querySelectorAll('.form-box');
+  formBoxes.forEach(formBox => {
+    const formBoxElements = formBox.querySelectorAll('.form-box__input');
+    formBoxElements.forEach(elem => {
+      elem.addEventListener('focus', activateInput);
+      elem.addEventListener('blur', deActivateInput);
+    });
   });
   function activateInput(e) {
     e.target.parentElement.classList.add('active');

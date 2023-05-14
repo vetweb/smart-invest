@@ -6,11 +6,14 @@
 	max-width: 840px;
 	z-index: 901;
 	transition: all .3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(20px);
 
-	&.hide {
-		opacity: 0;
-		visibility: hidden;
-		transform: translateY(20px);
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
 	}
 
 	@include tablet {

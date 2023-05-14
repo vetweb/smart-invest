@@ -173,8 +173,28 @@ const phone = {
 const rules1 = [name, phone];
 
 
+const name1 = {
+  ruleSelector: '.name',
+  errorMessage: 'Name error',
+  rules: [
+    { rule: "minLength", value: 3 },
+    { rule: "required" },
+  ],
+};
+const phone2 = {
+  ruleSelector: '.phone',
+  errorMessage: 'email error',
+  rules: [
+    { rule: "minLength", value: 3 },
+    { rule: "required" },
+  ],
+};
+const rules2 = [name1, phone2];
+
+
 const afterForm = () => {
   console.log('Произошла отправка, тут можно писать любые действия');
 };
 
-validateForms('.form-box__form', rules1, afterForm);
+validateForms('.js-form-modal', rules1, afterForm);
+validateForms('.js-form-order', rules2, afterForm);
