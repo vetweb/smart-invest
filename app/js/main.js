@@ -1327,14 +1327,13 @@ __webpack_require__.r(__webpack_exports__);
   function checkCookies() {
     // Если куки cookies_policy нет или она просрочена, то показываем уведомление
     if (!getCookie('cookies_policy')) {
-      cookieContainer.classList.add('show');
+      cookieContainer.classList.add('hide');
     }
 
     // При клике на кнопку устанавливаем куку cookies_policy на один год
     cookieBtn.addEventListener('click', function () {
       setCookie('cookies_policy', 'true', 365);
-      cookieContainer.classList.remove('show');
-      cookieContainer.classList.add('hide');
+      cookieContainer.classList.remove('hide');
       console.log(1);
     });
   }
