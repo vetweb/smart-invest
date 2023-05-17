@@ -34,6 +34,18 @@
 		width: 100%;
 		max-width: 412px;
 
+		&:hover {
+			background: none;
+
+			.grid-list__item-img img {
+				transform: scale(1,1);
+			}
+
+			p {
+			text-decoration: none;
+			}
+		}
+
 		@include tablet {
 			margin-right: 16px;
 			flex: 1 0 264px;

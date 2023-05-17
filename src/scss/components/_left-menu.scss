@@ -60,6 +60,7 @@
 	background: var(--white);
 
 	.header__burger & {
+		width: 100%;
 		margin: 7px auto 0;
 	}
 
@@ -107,24 +108,19 @@
 	background: none;
 
 	&:before {
-		transform: rotate(-40deg);
-		top: 10px;
+		transform: rotate(-45deg);
+		top: 11px;
 	}
 
 	&:after {
-		top: 10px;
-		transform: rotate(40deg);
-
-		@include tablet {
-			top: 11px;
-		}
+		top: 11px;
+		transform: rotate(45deg);
 	}
 }
 
 .header__burger.active .left-menu__button-icon {
 	&:before {
-		transform: rotate(-40deg);
-		top: 7px;
+		transform: rotate(-45deg);
 	}
 
 }

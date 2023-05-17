@@ -9,6 +9,8 @@
 		stroke: var(--dark-alpha56);
 		font-weight: 600;
 		transition: all .2s linear;
+		font-size: 12px;
+		text-transform: uppercase;
 
 		.banner-inner & {
 			stroke: var(--white);
@@ -25,6 +27,6 @@
 		width: 8px;
 		margin-right: 8px;
 		stroke-width: 2px;
-		transform: scale(-1, -1);
+		transform: scale(-1, -1) translate(0, 1px);
 	}
 }

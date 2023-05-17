@@ -3,7 +3,7 @@
 	margin: 100px 0;
 
 	@include tablet {
-		margin: 64px 0;
+		margin: 24px 0 64px;
 	}
 
 	&__row {
@@ -31,7 +31,6 @@
 		@include tablet {
 			flex: 0 0 auto;
 			width: 100%;
-			margin-top: 48px;
 		}
 
 		img	{
@@ -42,6 +41,10 @@
 
 		.swiper-container {
 			overflow: hidden;
+		}
+
+		.swiper-pagination {
+			bottom: 16px;
 		}
 	}
 
@@ -89,7 +92,7 @@
 		flex-wrap: wrap;
 
 		@include tablet {
-			margin: -8px
+			margin: -8px -8px 40px -8px;
 		}
 	}
 

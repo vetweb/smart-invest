@@ -20,14 +20,15 @@
 <body class="page__body">
 <div class="site-container">
     <div class="separator-vertica-left"></div>
-    <div class="left-menu js-open-left-menu" data-burger>
+    <div class="site-container__page">
+        <div class="left-menu js-open-left-menu" data-burger>
     <div class="left-menu__button">
         <span class="left-menu__button-icon"></span>
         <span class="left-menu__button-text">Меню</span>
     </div>
 </div>
 
-    <div class="menu-modal" data-menu>
+        <div class="menu-modal" data-menu>
     <div class="menu-modal__top">
         <div class="container">
             <div class="menu-modal__logo"></div>
@@ -95,16 +96,16 @@
         </div>
     </div>
 </div>
-    <span id="to-top"></span>
+        <span id="to-top"></span>
 <header class="header" data-aos="fade-down" data-aos-once="true">
-    <div class="container">
+    <div class="container header__container">
         <div class="header__wrapper">
             <a class="logo" href="##">
                 <img src="/img/logo.svg" alt="лого" class="logo__img">
                 <img src="/img/logo-inner.svg" alt="лого" class="logo__img-inner">
             </a>
             <ul class="header__menu">
-                <li class="header__menu-item"><a class="header__menu-link" href="##">Компания</a></li>
+                <li class="header__menu-item active"><a class="header__menu-link" href="##">Компания</a></li>
                 <li class="header__menu-item"><a class="header__menu-link" href="##">Услуги</a></li>
                 <li class="header__menu-item"><a class="header__menu-link" href="##">Проекты</a></li>
                 <li class="header__menu-item"><a class="header__menu-link" href="##">Объекты в управлении</a></li>
@@ -131,35 +132,36 @@
     </div>
 </header>
 
-    <div class="banner-inner" style="background-image: url('/img/bg-page-top.png')">
-        <div class="page-outer">
-            <div class="container">
-                <div class="to-back" data-text-anim data-aos="custom">
-                    <a href="##" class="to-back__link">
-                        <i class="to-back__link-arrow">
-                            <svg viewBox="0 0 8 12" fill="none">
-                                <use xlink:href="/img/sprite.svg#arrow-r"></use>
-                            </svg>
-                        </i>
-                        Вернуться Назад
-                    </a>
+        <div class="banner-inner" style="background-image: url('/img/bg-page-top.png')">
+            <div class="page-outer">
+                <div class="container">
+                    <div class="to-back" data-text-anim data-aos="custom">
+                        <a href="##" class="to-back__link">
+                            <i class="to-back__link-arrow">
+                                <svg viewBox="0 0 8 12" fill="none">
+                                    <use xlink:href="/img/sprite.svg#arrow-r"></use>
+                                </svg>
+                            </i>
+                            Вернуться Назад
+                        </a>
+                    </div>
+                    <h1 data-text-anim data-aos="custom">Инвестиции</h1>
+                    <div class="banner-inner__descr" data-text-anim data-aos="custom">«Вам не нужно быть умнее других.
+                        Вы всего лишь должны быть
+                        дисциплинированнее»
+                    </div>
+                    <div class="banner-inner__small-descr" data-text-anim data-aos="custom">Уоррен Баффетт</div>
                 </div>
-                <h1 data-text-anim data-aos="custom">Инвестиции</h1>
-                <div class="banner-inner__descr" data-text-anim data-aos="custom">«Вам не нужно быть умнее других. Вы всего лишь должны быть
-                    дисциплинированнее»
-                </div>
-                <div class="banner-inner__small-descr" data-text-anim data-aos="custom">Уоррен Баффетт</div>
             </div>
         </div>
-    </div>
-    <div class="section section--inner">
-        <div class="steps">
-            <div class="container">
-                <div class="steps__title" data-text-anim data-aos="custom">
-                    Хотите начать <a href="##">зарабатывать на инвестировании</a>
-                    в недвижимость или расширить свой портфель проектов в сфере недвижимости?
-                </div>
-                <div class="steps-list">
+        <div class="section section--inner">
+            <div class="steps">
+                <div class="container">
+                    <div class="steps__title" data-text-anim data-aos="custom">
+                        Хотите начать <a href="##">зарабатывать на инвестировании</a>
+                        в недвижимость или расширить свой портфель проектов в сфере недвижимости?
+                    </div>
+                    <div class="steps-list">
     <div class="steps-list__title" data-text-anim data-aos="custom" data-aos-once="true">
         Наши специалисты:
     </div>
@@ -208,11 +210,11 @@
         </div>
     </div>
 </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="separator separator--indent"></div>
-    <div class="modal">
+        <div class="separator separator--indent"></div>
+        <div class="modal">
     <div class="modal__overlay js-modal-close"></div>
     <div class="modal__content">
         <span class="modal__close js-modal-close">
@@ -226,12 +228,12 @@
             <div class="form-box">
                 <form action="" class="form-box__form js-form-modal">
                     <div class="form-box__item">
-                        <label class="form-box__label" for="username">Ваше имя</label>
                         <input id="username" name="name" class="form-box__input name" type="text" placeholder="Ваше имя">
+                        <label class="form-box__label" for="username">Ваше имя</label>
                     </div>
                     <div class="form-box__item">
-                        <label class="form-box__label" for="phone">Ваш телефон</label>
                         <input id="phone" name="phone" class="form-box__input phone" type="tel" placeholder="Ваш телефон">
+                        <label class="form-box__label" for="phone">Ваш телефон</label>
                     </div>
                     <div class="form-box__item">
                         <div class="dropdown-select">
@@ -278,7 +280,7 @@
         </button>
     </div>
 </div>
-    <div class="container">
+        <div class="container">
     <div class="order-form">
         <div class="order-form__row">
             <div class="order-form__left" data-aos="fade-up" data-aos-once="true">
@@ -300,12 +302,12 @@
                 <div class="form-box order-form__form-box">
                     <form action="" class="form-box__form js-form-order">
                         <div class="form-box__item">
-                            <label class="form-box__label" for="username2">Ваше имя</label>
                             <input id="username2" class="form-box__input name" type="text" name="name" placeholder="Ваше имя">
+                            <label class="form-box__label" for="username2">Ваше имя</label>
                         </div>
                         <div class="form-box__item">
-                            <label class="form-box__label" for="phone2">Ваш телефон</label>
                             <input id="phone2" class="form-box__input phone" type="tel" name="phone" placeholder="Ваше телефон">
+                            <label class="form-box__label" for="phone2">Ваш телефон</label>
                         </div>
                         <button class="form-box__button button">
                             <span class="button__hover"></span>
@@ -321,7 +323,8 @@
         </div>
     </div>
 </div>
-    <div class="separator separator--indent"></div>
+        <div class="separator separator--indent"></div>
+    </div>
     <div class="cookie-popup js-cookie-popup">
     <div class="cookie-popup__wrapper">
         <div class="cookie-popup__icon">

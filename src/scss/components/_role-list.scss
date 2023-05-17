@@ -1,8 +1,9 @@
 .role-list {
-	margin: 40px 0 0 0;
+	margin: 40px -48px 0 0;
 
 	@include tablet {
 		margin-left: -4px;
+		margin-right: 0;
 	}
 
 	&__wrapper {

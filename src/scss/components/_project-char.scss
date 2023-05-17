@@ -13,6 +13,11 @@
 		&:last-child {
 			margin-left: 0;
 		}
+
+		@include tablet {
+			width: 50%;
+			margin-right: 0;
+		}
 	}
 
 	&__title {

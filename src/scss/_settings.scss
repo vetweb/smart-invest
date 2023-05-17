@@ -53,7 +53,11 @@ a {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 
   &__page {
-    //margin-top: 30px;
+    margin-top: 40px;
+
+    @include tablet{
+      margin-top: 40px;
+    }
   }
 }
 

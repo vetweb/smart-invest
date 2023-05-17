@@ -18,15 +18,16 @@
 
 
 <body class="page__body inner-page">
-  <div class="site-container">
-    <div class="left-menu js-open-left-menu" data-burger>
+<div class="site-container">
+    <div class="site-container__page">
+        <div class="left-menu js-open-left-menu" data-burger>
     <div class="left-menu__button">
         <span class="left-menu__button-icon"></span>
         <span class="left-menu__button-text">Меню</span>
     </div>
 </div>
 
-    <div class="menu-modal" data-menu>
+        <div class="menu-modal" data-menu>
     <div class="menu-modal__top">
         <div class="container">
             <div class="menu-modal__logo"></div>
@@ -94,7 +95,7 @@
         </div>
     </div>
 </div>
-    <div class="modal">
+        <div class="modal">
     <div class="modal__overlay js-modal-close"></div>
     <div class="modal__content">
         <span class="modal__close js-modal-close">
@@ -108,12 +109,12 @@
             <div class="form-box">
                 <form action="" class="form-box__form js-form-modal">
                     <div class="form-box__item">
-                        <label class="form-box__label" for="username">Ваше имя</label>
                         <input id="username" name="name" class="form-box__input name" type="text" placeholder="Ваше имя">
+                        <label class="form-box__label" for="username">Ваше имя</label>
                     </div>
                     <div class="form-box__item">
-                        <label class="form-box__label" for="phone">Ваш телефон</label>
                         <input id="phone" name="phone" class="form-box__input phone" type="tel" placeholder="Ваш телефон">
+                        <label class="form-box__label" for="phone">Ваш телефон</label>
                     </div>
                     <div class="form-box__item">
                         <div class="dropdown-select">
@@ -160,16 +161,16 @@
         </button>
     </div>
 </div>
-    <span id="to-top"></span>
+        <span id="to-top"></span>
 <header class="header" data-aos="fade-down" data-aos-once="true">
-    <div class="container">
+    <div class="container header__container">
         <div class="header__wrapper">
             <a class="logo" href="##">
                 <img src="/img/logo.svg" alt="лого" class="logo__img">
                 <img src="/img/logo-inner.svg" alt="лого" class="logo__img-inner">
             </a>
             <ul class="header__menu">
-                <li class="header__menu-item"><a class="header__menu-link" href="##">Компания</a></li>
+                <li class="header__menu-item active"><a class="header__menu-link" href="##">Компания</a></li>
                 <li class="header__menu-item"><a class="header__menu-link" href="##">Услуги</a></li>
                 <li class="header__menu-item"><a class="header__menu-link" href="##">Проекты</a></li>
                 <li class="header__menu-item"><a class="header__menu-link" href="##">Объекты в управлении</a></li>
@@ -196,7 +197,7 @@
     </div>
 </header>
 
-    <div class="about section content">
+        <div class="about section content">
     <div class="container">
         <div class="about__wrapper">
             <div class="about__top" data-text-anim data-aos="custom" data-aos-once="true">
@@ -244,8 +245,8 @@
     </div>
 </div>
 <div class="separator"></div>
-    <div class="separator-vertica-left"></div>
-    <div class="section services-box">
+        <div class="separator-vertica-left"></div>
+        <div class="section services-box">
     <div class="content">
         <div class="container">
             <div class="content__title-box">
@@ -420,7 +421,7 @@
         </div>
     </div>
 </div>
-    <div class="section services-box dark-box">
+        <div class="section services-box dark-box">
     <div class="content">
         <div class="container">
             <div class="content__title-box">
@@ -473,19 +474,11 @@
         </div>
     </div>
 </div>
-    <div class="section">
+        <div class="section">
     <div class="content">
         <div class="container">
             <div class="content__title-box">
-                <h2 data-text-anim data-aos="custom" data-aos-once="true">Новости</h2>
-                <a href="##" class="link-more" data-text-anim data-aos="custom" data-aos-once="true">
-                    Все<span class="link-more__hide-mob"> новости</span>
-                    <i class="link-more__arrow">
-                        <svg viewBox="0 0 8 12" fill="none">
-                            <use xlink:href="/img/sprite.svg#arrow-r"></use>
-                        </svg>
-                    </i>
-                </a>
+                <h2 data-text-anim data-aos="custom" data-aos-once="true">Команда</h2>
             </div>
         </div>
         <div class="separator"></div>
@@ -562,7 +555,7 @@
     </div>
     <div class="separator"></div>
 </div>
-    <div class="cookie-popup js-cookie-popup">
+        <div class="cookie-popup js-cookie-popup">
     <div class="cookie-popup__wrapper">
         <div class="cookie-popup__icon">
             <img src="/img/cookie.svg" alt="">
@@ -581,6 +574,7 @@
         </div>
     </div>
 </div>
+    </div>
     <footer class="footer dark-box">
     <div class="container">
         <div class="footer__top">
@@ -639,7 +633,7 @@
     </div>
 </footer>
 
-  </div>
+</div>
 </body>
 
 </html>
