@@ -57,6 +57,10 @@
 	&__button {
 		width: 100%;
 
+		@include tablet {
+			height: 56px;
+		}
+
 		.modal-form & {
 			margin-top: 18px;
 		}
