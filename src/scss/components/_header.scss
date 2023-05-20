@@ -17,13 +17,11 @@
 		position: fixed;
 		top: 0;
 		height: 72px;
-		background: var(--dark);
 		padding: 12px 0;
 		transition: all .3s ease-in-out !important;
 		transition-delay: 0s !important;
 
 		.inner-page & {
-			background: var(--white-alpha20);
 			backdrop-filter: blur(4px);
 		}
 

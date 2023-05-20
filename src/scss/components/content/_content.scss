@@ -303,6 +303,11 @@ blockquote {
 
 	h2 {
 		margin-bottom: 0;
+
+		@include tablet {
+			font-size: 32px;
+			line-height: 40px;
+		}
 	}
 }
 

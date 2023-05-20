@@ -39,10 +39,11 @@ a {
 }
 
 .page-outer {
-  margin-top: 128px;
+  padding-top: 128px;
+  margin-top: -40px;
 
   @include tablet {
-    margin-top: 104px;
+    padding-top: 104px;
   }
 }
 
@@ -55,7 +56,7 @@ a {
   &__page {
     margin-top: 40px;
 
-    @include tablet{
+    @include tablet {
       margin-top: 40px;
     }
   }
