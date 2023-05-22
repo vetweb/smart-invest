@@ -1,6 +1,8 @@
 .button {
 	position: relative;
 	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
 	height: 48px;
 	padding: 0 20px;
 	background: var(--green);
@@ -56,6 +58,7 @@
 
 	&__text {
 		position: relative;
+		color: var(--dark);
 		z-index: 1;
 	}
 }
